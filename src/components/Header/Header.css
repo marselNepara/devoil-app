@@ -1,0 +1,39 @@
+.header{
+  width: 100%;
+  display: flex;
+  background: #233446;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.header-inner{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.header-nav-link{
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+.get-consultation{
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background: #d29d19;
+  font-weight: 600;
+  font-size: 16px;
+  color: #f0f2f5;
+  transition: 0.2s ease-in-out;
+}
+.get-consultation:hover{
+  background: #E0B445;
+}
