@@ -8,9 +8,25 @@ html, body{
   padding: 0;
   background: #F0F2F5;
 }
-a{
+a, h1, h2, h3, h4, h5, h6, p{
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 .container{
   width: 1200px;
+}
+button{
+  width: fit-content;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  background: #d29d19;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+  background: #E0B445;
 }

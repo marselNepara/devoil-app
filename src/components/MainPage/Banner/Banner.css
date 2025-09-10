@@ -1,0 +1,39 @@
+.banner{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: #233446;
+}
+.banner-inner{
+  background: url("../../../assets/images/banner-bg.png") repeat-y right top;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 60px 0;
+
+}
+.bannner-card{
+  backdrop-filter: blur(20px);
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25), inset 5px 5px 10px 0 rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 50px;
+  width: 805px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 48px;
+  color: #fff;
+  width: 660px;
+}
+.banner-undertitle{
+    width: 660px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ccc;
+}
