@@ -1,0 +1,104 @@
+.steps-of-order{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.steps-of-order-inner{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+.step-item{
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: 0.2s ease-in-out;
+}
+
+.step-item-number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+  background: #d39d19;
+  color: #fff;
+  min-width: 80px;
+  height: 80px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+}
+.step-item-text{
+  width: 100%;
+  border-right: 3px solid #d29d19;
+  border-radius: 30px;
+  padding: 30px 0px 30px 30px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+  background: #fff5f2;
+  transition: 0.2s ease-in-out;
+}
+.step-item:hover > .step-item-text{
+  box-shadow: 15px 15px 24px rgba(30, 58, 95, 0.15);
+  transform: scale(1.03);
+}
+
+.step-item-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  color: #d29d19;
+  text-align: start;
+
+}
+.step-item-undertitle{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 162%;
+  color: #233446;
+
+}
+.steps-of-order .step-item:nth-child(1){
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.steps-of-order .step-item:nth-child(2), .step-item:nth-child(4){
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.steps-of-order .step-item:nth-child(2), .step-item:nth-child(4){
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.steps-of-order .step-item:nth-child(2) > .step-item-text, .step-item:nth-child(4) > .step-item-text{
+  border-left: 3px solid #d29d19;
+  border-right: none;
+}
+.steps-of-partnership{
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 36px;
+  color: #233446;
+}
