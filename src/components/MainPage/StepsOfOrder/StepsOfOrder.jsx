@@ -13,7 +13,7 @@ export default function StepsOfOrder(){
           <div className="steps-of-order-inner">
             <h1 className="steps-of-partnership">Этапы сотрудничества</h1>
             {stepsoforder.map((step) => 
-              <div key={step.id} className="step-item">
+              <div id={"step" + step.id} key={step.id} className="step-item">
                 <div className="step-item-number">{step.id}</div>
                 <div className="step-item-text">
                   <div className="step-item-title">{step.title}</div>
