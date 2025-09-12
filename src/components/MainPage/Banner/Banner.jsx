@@ -2,7 +2,7 @@ import './Banner.css'
 export default function Banner(){
   return(
     <>
-      <div className="banner">
+      <section className="banner">
         <div className="container">
           <div className="banner-inner">
             <div className="bannner-card">
@@ -14,7 +14,7 @@ export default function Banner(){
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

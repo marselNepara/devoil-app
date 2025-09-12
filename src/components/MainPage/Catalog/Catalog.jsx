@@ -61,7 +61,7 @@ export default function Catalog() {
 
   return (
     <>
-      <div className="catalog">
+      <section className="catalog" id='catalog'>
         <div className="container">
           <div className="catalog-inner">
             <h1 className="catalog-title">Каталог</h1>
@@ -145,7 +145,7 @@ export default function Catalog() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

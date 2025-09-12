@@ -7,6 +7,7 @@ html, body{
   margin: 0;
   padding: 0;
   background: #F0F2F5;
+  scroll-behavior: smooth;
 }
 a, h1, h2, h3, h4, h5, h6, p{
   text-decoration: none;
@@ -29,4 +30,7 @@ button{
 }
 button:hover{
   background: #E0B445;
+}
+section{
+  scroll-margin-top: 30px
 }
