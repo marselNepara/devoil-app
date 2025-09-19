@@ -30,6 +30,10 @@
   background: #fff;
   border-radius: 20px;
   padding: 40px 30px 30px;
+  transition: 0.3s ease-in-out;
+}
+.catalog-item:hover{
+  box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.10);
 }
 .item-title {
   font-weight: 700;

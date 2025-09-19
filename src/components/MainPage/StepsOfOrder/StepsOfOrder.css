@@ -50,8 +50,9 @@
   transition: 0.3s ease-in-out;
 }
 .step-item:hover > .step-item-text{
+  z-index: 100;
   box-shadow: 20px 20px 20px rgba(30, 58, 95, 0.15);
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .step-item-title{
