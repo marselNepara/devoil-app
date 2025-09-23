@@ -1,0 +1,87 @@
+.about-company {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-company-inner {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+.about-company-title {
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+.about-company-main-block {
+  width: 100% ;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.about-company-main-block-inner{
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.about-company-main-block-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+}
+.about-company-main-block-title {
+  font-size: 24px;
+  max-width: 420px;
+  line-height: 150%;
+}
+.about-company-main-block-descriprion {
+  max-width: 512px;
+line-height: 150%;
+}
+.about-company-main-block-advantages {
+  display: flex;
+  gap: 20px;
+}
+.about-company-main-block-advantage-item {
+    padding: 10px;
+  background-color: #FFF5F2;
+  color: #D29D19;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.about-company-main-block-links {
+  display: flex;
+  gap: 20px;
+}
+.about-company-main-block-link {
+border-radius: 8px;
+padding: 10px 20px;
+box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+background: #d29d19;
+color: #fff;
+    transition: 0.3s ease-in-out;
+}
+.about-company-main-block-link:hover{
+    background: #E0B445;
+}
+.about-company-main-block-image {
+  border-radius: 20px;
+  background-color: #233446;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 145px 64px;
+}

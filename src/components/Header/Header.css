@@ -24,4 +24,12 @@
   font-size: 18px;
   color: #fff;
 }
+.get-consultation{
+  border-radius: 8px;
+  padding: 10px 20px; 
+  background: #d29d19;
+  font-weight: 600;
+  font-size: 16px;
+  color: #f0f2f5;
+}
 

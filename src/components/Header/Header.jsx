@@ -1,5 +1,5 @@
 import "./Header.css";
-import Logo from '../../assets/images/Header-Logo.svg';
+import Logo from '@assets/images/Header-Logo.svg';
 export default function Header(){
   return(
     <>
@@ -14,7 +14,7 @@ export default function Header(){
               <a href="#aboutcompany" className="header-nav-link">О компании</a>
               <a href="#contacts" className="header-nav-link">Контакты</a>
             </nav>
-            <button className="get-consultation">Получить консультацию</button>
+            <a href="#bid" className="get-consultation">Получить консультацию</a>
           </div>
         </div>
       </header>

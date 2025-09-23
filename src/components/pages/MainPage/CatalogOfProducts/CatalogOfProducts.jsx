@@ -1,9 +1,11 @@
-import './CatalogOfProducts.css'
-
+import './CatalogOfProducts.css';
+import CanisterImg from '@assets/images/Canister.png';
+import GearImg from '@assets/images/Gear.png';
+import SpannerImg from '@assets/images/Spanner.png';
 export default function CatalogOfProducts(){
   return(
     <>
-      <section className="catalog-of-products">
+      <section id='catalog' className="catalog-of-products">
         <div className="container">
           <div className="catalog-of-products-inner">
             <h1 className="catalog-of-products-title">Каталог продукции</h1>
@@ -13,7 +15,7 @@ export default function CatalogOfProducts(){
                   <p className="item-segment item-segment-1">
                     Премиум
                   </p>
-                  <img src="../../../../src/assets/images/Canister.png" alt="" />
+                  <img src={CanisterImg} alt="" />
                 </div>
                 <h2 className="item-title">Белые масла</h2>
                 <p className="item-description">
@@ -30,7 +32,7 @@ export default function CatalogOfProducts(){
                   <p className="item-segment item-segment-2">
                     Стандарт
                   </p>
-                  <img src="../../../../src/assets/images/Gear.png" alt="" />
+                  <img src={GearImg} alt="" />
                 </div>
                 <h2 className="item-title">Вазелиновые масла</h2>
                 <p className="item-description">
@@ -47,7 +49,7 @@ export default function CatalogOfProducts(){
                 <p className="item-segment item-segment-3">
                   Промышленное
                 </p>
-                <img src="../../../../src/assets/images/Spanner.png" alt="" />
+                <img src={SpannerImg} alt="" />
                 </div>
                 <h2 className="item-title">Редукторные масла</h2>
                 <p className="item-description">

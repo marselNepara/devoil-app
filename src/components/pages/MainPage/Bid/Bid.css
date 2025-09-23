@@ -1,0 +1,68 @@
+.bid {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bid-inner {
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  background: url("@assets/images/price-bg.png") no-repeat right top ;
+}
+.bid-block {
+  width: min-content;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 50px 50px 50px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.bid-title {
+  font-weight: 600;
+  font-size: 36px;
+  color: #233446;
+}
+.bid-description {
+  min-width: 650px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #233446;
+}
+.bid-row {
+  display: flex;
+  gap: 20px;
+}
+.bid-row-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 5px;
+}
+.bid-textarea{
+  width: 614px;
+  height: 90px;
+}
+.bid-input{
+  width: 280px;
+}.bid-link{
+    color: #d29d19;;
+}
+.checkbox-text{
+  max-width: 670px;
+}
+.error-message {
+  max-width: 290px;
+  font-size: 14px;
+  color: #e74c3c;
+  margin-top: 4px;
+  font-weight: 500;
+  animation: fadeIn 0.3s ease-in;
+}
