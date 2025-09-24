@@ -47,3 +47,6 @@
   background: #d29d19;
     transition: 0.3s ease-in-out;
 }
+.banner-button:hover{
+    background: #E0B445;  
+}

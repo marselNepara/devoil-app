@@ -31,5 +31,8 @@
   font-weight: 600;
   font-size: 16px;
   color: #f0f2f5;
+  transition: 0.3s ease-in-out;
 }
-
+.get-consultation:hover{
+  background: #E0B445;  
+}

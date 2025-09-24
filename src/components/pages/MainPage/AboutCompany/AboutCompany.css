@@ -67,6 +67,9 @@ line-height: 150%;
   gap: 20px;
 }
 .about-company-main-block-link {
+  font-weight: 600;
+font-size: 16px;
+color: #f0f2f5;
 border-radius: 8px;
 padding: 10px 20px;
 box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
@@ -254,4 +257,8 @@ color: #fff;
 padding: 10px 20px;
 background-color: #D29D19;
 border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+.link-contact-us:hover{
+    background: #E0B445;  
 }

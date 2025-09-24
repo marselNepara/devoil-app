@@ -125,13 +125,34 @@ padding-bottom: 20px;
 
 }
 .item-button-more-1{
+  font-weight: 600;
+  font-size: 16px;
+  color: #f0f2f5;
   background: #d29d19;
+      transition: 0.3s ease-in-out;
+}
+.item-button-more-1:hover{
+      background: #E0B445;  
 }
 .item-button-more-2{
+    font-weight: 600;
+    font-size: 16px;
+  color: #f0f2f5;
   background: #1a2832;
+        transition: 0.3s ease-in-out;
+}
+.item-button-more-2:hover{
+    background: #2b4152;
 }
 .item-button-more-3{
+    font-weight: 600;
+    font-size: 16px;
+  color: #f0f2f5;
   background: #6b7a8f;
+        transition: 0.3s ease-in-out;
+}
+.item-button-more-3:hover{
+    background: #8597b1;
 }
 .catalog-of-products-item .item-image > img{
   transition: 0.3s ease-in-out;
