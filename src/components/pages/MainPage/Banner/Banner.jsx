@@ -10,7 +10,7 @@ export default function Banner(){
               <p className="banner-undertitle">
 Высокочистое, очищенное, соответствует всем нормам и стандартам качества.
               </p>
-              <a className="banner-button">Связаться с нами</a>
+              <a href='#contacts' className="banner-button">Связаться с нами</a>
             </div>
           </div>
         </div>

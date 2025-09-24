@@ -5,6 +5,7 @@ import StepsOfOrder from '@components/pages/MainPage/StepsOfOrder/StepsOfOrder';
 import CatalogOfProducts from '@components/pages/MainPage/CatalogOfProducts/CatalogOfProducts';
 import Bid from '@components/pages/MainPage/Bid/Bid';
 import AboutCompany from '@components/pages/MainPage/AboutCompany/AboutCompany';
+import Contacts from './components/pages/MainPage/Contacts/Contacts';
 export default function App() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function App() {
       <CatalogOfProducts/>
       <Bid/>
       <AboutCompany/>
+      <Contacts/>
       <Footer/>
     </>
   );
