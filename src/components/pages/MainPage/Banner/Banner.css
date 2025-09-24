@@ -36,3 +36,14 @@
   font-size: 18px;
   color: #ccc;
 }
+.banner-button{
+    width: fit-content;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  background: #d29d19;
+    transition: 0.3s ease-in-out;
+}

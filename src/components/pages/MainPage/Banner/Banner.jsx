@@ -6,11 +6,11 @@ export default function Banner(){
         <div className="container">
           <div className="banner-inner">
             <div className="bannner-card">
-              <h1 className="banner-title">Вазелиновое масло для промышленных предприятий</h1>
+              <h1 className="banner-title">Базовые масла высокой очистки</h1>
               <p className="banner-undertitle">
 Высокочистое, очищенное, соответствует всем нормам и стандартам качества.
               </p>
-              <button className="banner-button">Для промышленности</button>
+              <a className="banner-button">Связаться с нами</a>
             </div>
           </div>
         </div>

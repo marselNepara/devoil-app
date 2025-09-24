@@ -85,3 +85,173 @@ color: #fff;
   justify-content: center;
   padding: 145px 64px;
 }
+
+
+.production-process-block {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width: 100%;
+}
+
+.production-process-block-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+}
+
+.production-process-block-title {
+  width: 100%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: #233446;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #d29d19;
+}
+
+.process-steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.step {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #fff5f2;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 25px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+.step-underline {
+  background-color: #233446;
+}
+.step:hover {
+  background: #fef8f4;
+  transform: translateY(-2px);
+}
+
+/* Активный шаг */
+.step-active {
+  background: #d29d19 !important;
+  color: white;
+}
+
+.step-active .step-name{
+  color: #fff;
+}
+
+.step-active .step-underline {
+  background-color: white;
+}
+
+.step-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-icon img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+.step-name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #233446;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.step-underline {
+  width: 30px;
+  height: 3px;
+  background-color: #233446;
+  border-radius: 2px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Контент с описанием */
+.step-content {
+  background-color: #fff5f2;
+  border-left: 3px solid #d29d19;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.step-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.step-description >h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #233446;
+}
+.step-description > p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #233446;
+}
+
+.collaborate-block {
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+}
+.collaborate-inner {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.collaborate-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.collaborate-title {
+  font-weight: 700;
+font-size: 24px;
+line-height: 150%;
+color: #233446;
+}
+.collaborate-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(35, 52, 70, 0.5);
+}
+.link-contact-us{
+  font-weight: 600;
+font-size: 16px;
+text-align: center;
+color: #fff;
+padding: 10px 20px;
+background-color: #D29D19;
+border-radius: 8px;
+}
