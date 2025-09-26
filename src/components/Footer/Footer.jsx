@@ -25,7 +25,6 @@ export default function Footer(){
               </div>
               <div className="footer-column">
                 <h2 className="footer-column-title">Контакты</h2>
-                                <a href="https://t.me/devoilorg">Телеграм канал</a>
                 <div className="footer-contacts-item">
                   <img src={PhoneImg} alt="" />
                   <a href="tel:+79859775678">+7 985 977 5678</a>

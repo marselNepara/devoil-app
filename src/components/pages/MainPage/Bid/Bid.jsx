@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Bid.css';
+import { useSlideIn } from '@hooks/useSlideIn';
 
 export default function Bid() {
   const [checked, setChecked] = useState(false);
@@ -131,12 +132,14 @@ export default function Bid() {
     setLoading(false);
   }
 };
-
+  const [bidRef, isBidVisible] = useSlideIn();
   return (
     <section id='bid' className="bid">
       <div className="container">
         <div className="bid-inner">
-          <div className="bid-block">
+          <div
+          ref={bidRef}
+          className={`bid-block ${isBidVisible ? 'visible' : ''}`}>
             <h1 className="bid-title">Оставить заявку</h1>
             <p className="bid-description">
               Оставьте контакт — и мы вышлем вам прайс с оптовыми ценами, условиями поставки и сертификатами.

@@ -1,14 +1,20 @@
 import './Contacts.css';
 import PhoneIcon from '@assets/images/contacts-phone-icon.svg';
 import MailIcon from '@assets/images/contacts-mail-icon.svg';
+import { useSlideIn } from '@hooks/useSlideIn';
 export default function Contacts(){
+
+  const [titleRef, isTitleVisible] = useSlideIn();
+  const [contactsRef, isContactsVisible] = useSlideIn();
   return(
     <>
       <section id='contacts' className="contacts">
         <div className="container">
           <div className="contacts-inner">
-            <h1 className="contacts-title">Контактная информация</h1>
-            <div className="contacts-items">
+            <h1
+            ref={titleRef} 
+            className={`contacts-title  ${isTitleVisible ? 'visible' : ''}`}>Контактная информация</h1>
+            <div ref={contactsRef} className={`contacts-items ${isContactsVisible ? 'visible' : ''}`}>
               <div className="contact-item">
                 <h2 className="contact-item-title">Наши контакты</h2>
                 <div className="our-contacts-items">
@@ -45,7 +51,7 @@ export default function Contacts(){
                     </div>
                     <div className="mode-item">
                       <h4 className="mode-day">Воскресенье</h4>
-                      <h4 className="mode-time">Выходной</h4>
+                      <h4 className="mode-time">10:00 - 15:00</h4>
                     </div>
                   </div>
               </div>

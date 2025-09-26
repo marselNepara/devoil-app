@@ -1,31 +1,42 @@
 import './AboutCompany.css';
-import { useState } from 'react';
+
 import logo from '@assets/images/Devoil-Logo.svg';
 import BarrelImg from '@assets/images/Step-barrel.png';
 import GearImg from '@assets/images/Step-gear.png';
 import MicroscopeImg from '@assets/images/Step-microscope.png';
 import BoxImg from '@assets/images/Step-box.png';
 import GazeleImg from '@assets/images/Step-gazele.png';
-
+import { useState } from 'react';
+import { useSlideIn } from '@hooks/useSlideIn';
 export default function AboutCompany() {
   const [activeStep, setActiveStep] = useState('Сырье');
 
   const descriptions = {
     Сырье: 'Закупка высококачественного сырья от проверенных поставщиков',
-    Производство: 'Современные технологии производства без использования химических добавок',
+    Производство: 'Современные технологии производства, с применением инновационных подходов',
     Контроль: 'Многоступенчатый контроль качества на каждом этапе',
-    Упаковка: 'Упаковка в герметичной таре различного объёма',
-    Доставка: 'Быстрая и надёжная доставка по всей России'
+    Упаковка: 'Упаковка в герметичной таре в соответствии со всеми необходимыми условиями транспортировки, для сохранения высочайшего качества продукта',
+    Доставка: 'Быстрая и надежная доставка по всему миру, с гибкими условиями'
   };
-
+  const [titleRef, isTitleVisible] = useSlideIn();
+  const [aboutCompanyRef, isAboutCompanyVisible] = useSlideIn();
+  const [productionProcessRef, isProductionProcessVisible] = useSlideIn();
+  const [collaborateBlockRef, isCollaborateBlockVisible] = useSlideIn();
   return (
     <>
       <section id="aboutcompany" className="about-company">
         <div className="container">
           <div className="about-company-inner">
-            <h1 className="about-company-title">О компании</h1>
-
-            <div className="about-company-main-block">
+            <h1 
+              ref={titleRef}
+              className={`about-company-title ${isTitleVisible ? 'visible' : ''}`}
+            >
+              О компании
+            </h1>
+            <div 
+              ref={aboutCompanyRef}
+              className={`about-company-main-block ${isAboutCompanyVisible ? 'visible' : ''}`}
+            >
               <div className="about-company-main-block-inner">
                 <div className="about-company-main-block-text">
                   <h2 className="about-company-main-block-title">
@@ -46,8 +57,10 @@ export default function AboutCompany() {
                 <img src={logo} alt="Логотип Devoil" className="about-company-main-block-image" />
               </div>
             </div>
-
-            <div className="production-process-block">
+            <div 
+            ref={productionProcessRef}
+              className={`production-process-block ${isProductionProcessVisible ? 'visible' : ''}`} 
+            >
               <div className="production-process-block-inner">
                 <h1 className="production-process-block-title">Производственный процесс</h1>
 
@@ -73,6 +86,7 @@ export default function AboutCompany() {
                     <h3 className="step-name">Производство</h3>
                     <div className="step-underline"></div>
                   </div>
+
                   <div
                     className={`step ${activeStep === 'Контроль' ? 'step-active' : ''}`}
                     onClick={() => setActiveStep('Контроль')}
@@ -83,6 +97,7 @@ export default function AboutCompany() {
                     <h3 className="step-name">Контроль</h3>
                     <div className="step-underline"></div>
                   </div>
+
                   <div
                     className={`step ${activeStep === 'Упаковка' ? 'step-active' : ''}`}
                     onClick={() => setActiveStep('Упаковка')}
@@ -93,6 +108,7 @@ export default function AboutCompany() {
                     <h3 className="step-name">Упаковка</h3>
                     <div className="step-underline"></div>
                   </div>
+
                   <div
                     className={`step ${activeStep === 'Доставка' ? 'step-active' : ''}`}
                     onClick={() => setActiveStep('Доставка')}
@@ -104,23 +120,27 @@ export default function AboutCompany() {
                     <div className="step-underline"></div>
                   </div>
                 </div>
+
                 <div className="step-content">
                   <div className="step-description">
                     <h3>{activeStep}</h3>
-                    <p>{descriptions[activeStep]}</p> 
+                    <p>{descriptions[activeStep]}</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="collaborate-block">
-                <div className="collaborate-inner">
-                  <div className="collaborate-text">
-                    <h1 className="collaborate-title">Готовы к сотрудничеству?</h1>
-                    <p className="collaborate-description">Станьте нашим партнером и получите доступ к продукции по выгодным ценам</p>
-                  </div>
-                  <a href="#contacts" className="link-contact-us">Связаться с нами</a>
+            <div 
+            ref={collaborateBlockRef}
+              className={`collaborate-block ${isCollaborateBlockVisible ? 'visible' : ''}`} 
+            >
+              <div className="collaborate-inner">
+                <div className="collaborate-text">
+                  <h1 className="collaborate-title">Готовы к сотрудничеству?</h1>
+                  <p className="collaborate-description">Станьте нашим партнером и получите доступ к продукции по выгодным ценам</p>
                 </div>
+                <a href="#contacts" className="link-contact-us">Связаться с нами</a>
               </div>
+            </div>
           </div>
         </div>
       </section>

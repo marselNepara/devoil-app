@@ -6,6 +6,7 @@ import CatalogOfProducts from '@components/pages/MainPage/CatalogOfProducts/Cata
 import Bid from '@components/pages/MainPage/Bid/Bid';
 import AboutCompany from '@components/pages/MainPage/AboutCompany/AboutCompany';
 import Contacts from './components/pages/MainPage/Contacts/Contacts';
+import './index.css';
 export default function App() {
   return (
     <>
