@@ -14,7 +14,9 @@
 }
 .about-company-title {
   margin-bottom: 10px;
+  font-weight: 600;
   font-size: 36px;
+  color: #233446;
 }
 .about-company-main-block {
   width: 100% ;

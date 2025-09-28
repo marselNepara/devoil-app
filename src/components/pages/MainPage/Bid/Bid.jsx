@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import './Bid.css';
 import { useSlideIn } from '@hooks/useSlideIn';
-
+import { useTranslation } from '@hooks/useTranslation';
 export default function Bid() {
+  const { t } = useTranslation();
   const [checked, setChecked] = useState(false);
   const [formData, setFormData] = useState({
     surname: '',
@@ -53,23 +54,23 @@ export default function Bid() {
   const validate = () => {
     const newErrors = {};
 
-    if (!formData.surname.trim()) newErrors.surname = 'Напишите фамилию';
-    if (!formData.name.trim()) newErrors.name = 'Напишите имя';
+    if (!formData.surname.trim()) newErrors.surname = t("contact_form.fields.last_name.error");
+    if (!formData.name.trim()) newErrors.name = t("contact_form.fields.first_name.error");
 
     if (!formData.email.trim()) {
-      newErrors.email = 'Напишите почту';
+      newErrors.email = t("contact_form.fields.email.error");
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'Неверный формат email';
+      newErrors.email = t("contact_form.fields.email.error-valid");
     }
 
     if (!formData.phone.trim()) {
-      newErrors.phone = 'Введите телефон';
+      newErrors.phone = t("contact_form.fields.phone.error");
     } else if (!isValidRussianPhone(formData.phone)) {
-      newErrors.phone = 'Введите корректный номер, например: +79999999999';
+      newErrors.phone = t("contact_form.fields.phone.error-valid");
     }
 
     if (!checked) {
-      alert('Вы должны дать согласие на обработку персональных данных');
+      alert(t('contact_form.alerts.error'));
       return false;
     }
 
@@ -121,13 +122,13 @@ export default function Bid() {
     if (response.ok) {
       setFormData({ surname: '', name: '', email: '', phone: '', comment: '' });
       setChecked(false);
-      alert('Заявка отправлена! Мы свяжемся с вами.');
+      alert(t("contact_form.alerts.good"));
     } else {
       alert(`Ошибка: ${text}`);
     }
   } catch (error) {
     console.error('Ошибка сети:', error);
-    alert('Не удалось отправить заявку. Проверьте интернет или попробуйте позже.');
+    alert(t("contact_form.alerts.error-server"));
   } finally {
     setLoading(false);
   }
@@ -140,9 +141,9 @@ export default function Bid() {
           <div
           ref={bidRef}
           className={`bid-block ${isBidVisible ? 'visible' : ''}`}>
-            <h1 className="bid-title">Оставить заявку</h1>
+            <h1 className="bid-title">{t("contact_form.title")}</h1>
             <p className="bid-description">
-              Оставьте контакт — и мы вышлем вам прайс с оптовыми ценами, условиями поставки и сертификатами.
+              {t("contact_form.description")}
             </p>
             <div className="bid-row">
               <div className="bid-row-item">
@@ -156,7 +157,7 @@ export default function Bid() {
                     onChange={handleChange}
                   />
                   <label htmlFor="surname" className="form-label">
-                    Фамилия *
+                    {t("contact_form.fields.last_name.label")}
                   </label>
                 </div>
                 {errors.surname && <span className="error-message">{errors.surname}</span>}
@@ -172,7 +173,7 @@ export default function Bid() {
                     onChange={handleChange}
                   />
                   <label htmlFor="name" className="form-label">
-                    Имя *
+                    {t("contact_form.fields.first_name.label")}
                   </label>
                 </div>
                 {errors.name && <span className="error-message">{errors.name}</span>}
@@ -190,7 +191,7 @@ export default function Bid() {
                     onChange={handleChange}
                   />
                   <label htmlFor="email" className="form-label">
-                    E-mail *
+                    {t("contact_form.fields.email.label")}
                   </label>
                 </div>
                 {errors.email && <span className="error-message">{errors.email}</span>}
@@ -206,7 +207,7 @@ export default function Bid() {
                     onChange={handleChange}
                   />
                   <label htmlFor="phone" className="form-label">
-                    Номер телефона *
+                    {t("contact_form.fields.phone.label")}
                   </label>
                 </div>
                 {errors.phone && <span className="error-message">{errors.phone}</span>}
@@ -228,7 +229,7 @@ export default function Bid() {
                     }
                   />
                   <label htmlFor="comment" className="form-label">
-                    Комментарий
+                    {t("contact_form.fields.comment.label")}
                   </label>
                 </div>
               </div>
@@ -242,16 +243,15 @@ export default function Bid() {
               />
               <span className={`checkbox-box ${checked ? 'checked' : ''}`}></span>
               <span className="checkbox-text">
-                Я даю согласие на обработку моих персональных данных в целях связи и делового взаимодействия. С{' '}
+                {t("contact_form.consent.text")}
                 <a
                   className="bid-link"
                   href="/policy"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Политикой конфиденциальности
+                {t("contact_form.consent.link_text")}
                 </a>{' '}
-                ознакомлен.
               </span>
             </label>
             <button
@@ -260,7 +260,8 @@ export default function Bid() {
               onClick={handleSubmit}
               disabled={loading}
             >
-              {loading ? 'Отправка...' : 'Оставить заявку'}
+              {loading ? t("contact_form.submit_button_loading")  : t("contact_form.submit_button")
+}
             </button>
           </div>
         </div>

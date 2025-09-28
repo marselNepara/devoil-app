@@ -9,5 +9,86 @@
     "title": "Highly refined oils",
     "undertitle": "Highly pure, purified, meets all quality standards and norms",
     "button": "Contact us"
+  },
+  "steps": {
+    "title": "Cooperation Stages",
+    "items": [
+      {
+        "title": "Submit a Request",
+        "undertitle": "Send your inquiry via the website. Specify the desired volume, application, and oil requirements."
+      },
+      {
+        "title": "Receive Commercial Offer",
+        "undertitle": "Our manager contacts you, clarifies details, and sends a price list, certificates, and delivery terms."
+      },
+      {
+        "title": "Confirm Delivery",
+        "undertitle": "After agreement, we reserve the product and prepare full documentation package — UTD, quality passport."
+      },
+      {
+        "title": "Organize Delivery",
+        "undertitle": "We provide complete set of accompanying documents: UTD and quality passport."
+      }
+    ]
+  },
+  "catalog": {
+    "title": "Product Catalog",
+    "item-1-segment": "Standard",
+    "item-1-title": "White Oils",
+    "item-1-description": "Highly refined mineral oils for cosmetic, pharmaceutical, food, and industrial applications",
+    "item-1-usage-item-1": "Cosmetics",
+    "item-1-usage-item-2": "Pharmaceuticals",
+    "item-1-usage-item-3": "Food",
+    "item-2-segment": "Premium",
+    "item-2-title": "Petrolatum Oils",
+    "item-2-description": "Highly refined medical and technical petrolatum oils for various industrial applications",
+    "item-2-usage-item-1": "Medical",
+    "item-2-usage-item-2": "Technical",
+    "item-2-usage-item-3": "Lubrication",
+    "item-3-segment": "Industrial",
+    "item-3-title": "Gear Oils",
+    "item-3-description": "Specialized oils for gearboxes, transmissions, and heavy industrial equipment — reliable and durable",
+    "item-3-usage-item-1": "Gearboxes",
+    "item-3-usage-item-2": "Technical",
+    "item-3-usage-item-3": "Transmissions",
+    "btn-more": "More"
+  },
+  "contact_form": {
+    "title": "Request a quote",
+    "description": "Send your contact details — we’ll send you our wholesale price list, delivery terms, and certificates",
+    "fields": {
+      "last_name": {
+        "label": "Last Name *",
+        "error": "Enter your last name"
+      },
+      "first_name": {
+        "label": "First Name *",
+        "error": "Enter your first name"
+      },
+      "email": {
+        "label": "Email *",
+        "error": "Enter your email",
+        "error-valid": "Please enter a valid email, for example example@mail.ru"
+      },
+      "phone": {
+        "label": "Phone Number *",
+        "error": "Enter your phone number",
+        "error-valid": "Please enter a valid number, for example +79999999999"
+      },
+      "comment": {
+        "label": "Comment"
+      }
+    },
+    "consent": {
+      "text": "I agree to the processing of my personal data for communication and business purposes. I have read and accept the ",
+      "link_text": "Privacy Policy."
+    },
+    "submit_button": "Submit Request",
+    "submit_button_loading": "Sending...",
+    "alerts": {
+      "good": "Your request has been sent! We will contact you.",
+      "error": "You must consent to the processing of personal data.",
+      "error-server": "Failed to submit your request. Please check your internet connection or try again later."
+    }
   }
 }
