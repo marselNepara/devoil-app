@@ -24,7 +24,7 @@
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
   background: #fff;
   padding: 30px;
-  transition: 1s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 .item-image {
   position: relative;

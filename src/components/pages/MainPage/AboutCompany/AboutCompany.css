@@ -41,9 +41,11 @@
   gap: 20px;
 }
 .about-company-main-block-title {
-  font-size: 24px;
   max-width: 420px;
+  font-weight: 700;
+  font-size: 24px;
   line-height: 150%;
+  color: #233446;
 }
 .about-company-main-block-descriprion {
   max-width: 512px;

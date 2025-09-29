@@ -5,6 +5,33 @@
     "contacts": "Contacts",
     "consultation": "Get consultation"
   },
+  "footer": {
+    "logo-alt": "DevOil Logo",
+    "catalog": {
+      "title": "Catalog",
+      "items": {
+        "white-oils": "White Oils",
+        "vaseline-oils": "Vaseline Oils",
+        "gear-oils": "Gear Oils"
+      }
+    },
+    "company": {
+      "title": "Company",
+      "items": {
+        "about": "About Us",
+        "how-we-work": "How We Work"
+      }
+    },
+    "contacts": {
+      "title": "Contacts",
+      "phone-alt": "Phone",
+      "email-alt": "Email",
+      "telegram-alt": "Message us on Telegram",
+      "whatsapp-alt": "Message us on WhatsApp"
+    },
+    "copyright": "All rights reserved.",
+    "privacy-policy": "Privacy Policy"
+  },
   "banner": {
     "title": "Highly refined oils",
     "undertitle": "Highly pure, purified, meets all quality standards and norms",
@@ -89,6 +116,70 @@
       "good": "Your request has been sent! We will contact you.",
       "error": "You must consent to the processing of personal data.",
       "error-server": "Failed to submit your request. Please check your internet connection or try again later."
+    }
+  },
+  "about-company": {
+    "title": "About company",
+    "about-company-block": {
+      "title": "A reliable supplier of highly refined base oils",
+      "description": "Devoil is a company specializing in the supply of high—quality base oils used in industry, energy, cosmetics and pharmaceuticals. We provide enterprises throughout Russia and the near abroad with stable supplies of oils that meet international quality standards. Our goal is to be a reliable partner for manufacturers, offering flexible terms of cooperation, a wide range and guaranteed product quality.",
+      "advantages": {
+        "first-advantage": "Modern equipment",
+        "second-advantage": "An experienced team"
+      },
+      "buttons": {
+        "our-products": "Our products",
+        "request-a-quote": "Request a quote"
+      }
+    },
+      "production-process": {
+        "title": "The production process",
+        "items": {
+          "item-1": {
+            "title": "Raw material",
+            "description": "Procurement of high-quality raw materials from verified suppliers"
+          },
+          "item-2": {
+            "title": "Production",
+            "description": "Modern production technologies with innovative approaches"
+          },
+          "item-3": {
+            "title": "Quality control",
+            "description": "Multi-stage quality control at every step"
+          },
+          "item-4": {
+            "title": "Packaging",
+            "description": "Packaging in sealed containers according to all required transportation conditions to maintain the highest product quality"
+          },
+          "item-5": {
+            "title": "Delivery",
+            "description": "Fast and reliable worldwide delivery with flexible terms"
+          }
+        }
+      },
+      "collaborate": {
+        "title": "Are you ready to cooperate?",
+        "description": "Become our partner and get access to products at competitive prices.",
+        "button": "Contact us"
+      }
+    },
+    "contacts": {
+    "title": "Contact Information",
+    "our-contacts": {
+      "title": "Our Contacts",
+      "phone-label": "Phone",
+      "phone-alt": "Phone icon",
+      "email-label": "Email",
+      "email-alt": "Email icon"
+    },
+    "working-hours": {
+      "title": "Working Hours",
+      "weekdays": "Monday – Friday",
+      "weekdays-hours": "09:00 – 18:00",
+      "saturday": "Saturday",
+      "saturday-hours": "10:00 – 16:00",
+      "sunday": "Sunday",
+      "sunday-hours": "10:00 – 15:00"
     }
   }
 }
