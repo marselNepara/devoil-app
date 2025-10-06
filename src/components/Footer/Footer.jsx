@@ -5,7 +5,7 @@ import MailImg from '@assets/images/footer-mail.svg';
 import WhatsAppIcon from '@assets/images/whatsapp-icon.png';
 import TelegramIcon from '@assets/images/telegram-icon.png';
 import { useTranslation } from '@hooks/useTranslation';
-
+import { Link } from 'react-router-dom';
 export default function Footer() {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();

@@ -1,6 +1,6 @@
 import './CatalogOfProducts.css';
 import { useSlideIn } from '@hooks/useSlideIn';
-
+import { Link } from 'react-router-dom';
 import CanisterImg from '@assets/images/Canister.png';
 import GearImg from '@assets/images/Gear.png';
 import BottleImg from '@assets/images/Bottle.png';
