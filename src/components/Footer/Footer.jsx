@@ -19,15 +19,15 @@ export default function Footer() {
 
             <div className="footer-column">
               <h2 className="footer-column-title">{t('footer.catalog.title')}</h2>
-              <a href="#catalog" className="footer-column-link">
+              <Link to="catalog/white-oils" className="footer-column-link">
                 {t('footer.catalog.items.white-oils')}
-              </a>
-              <a href="#catalog" className="footer-column-link">
+              </Link>
+              <Link to="catalog/vaseline-oils" className="footer-column-link">
                 {t('footer.catalog.items.vaseline-oils')}
-              </a>
-              <a href="#catalog" className="footer-column-link">
+              </Link>
+              <Link to="catalog/reducer-oils" className="footer-column-link">
                 {t('footer.catalog.items.gear-oils')}
-              </a>
+              </Link>
             </div>
 
             <div className="footer-column">
@@ -81,7 +81,7 @@ export default function Footer() {
             <p>
               &copy; {currentYear} DevOil. {t('footer.copyright')}
             </p>
-            <a href="#policy" className="footer-privacy-link">
+            <a href="policy" className="footer-privacy-link">
               {t('footer.privacy-policy')}
             </a>
             <div className="footer-docs">

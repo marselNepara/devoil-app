@@ -34,7 +34,7 @@ export default function Header() {
           <div className="header-inner">
             {/* Логотип */}
             <div className="logo">
-              <a href="/"><img src={Logo} alt="Логотип DevOil" /></a>
+              <Link to="/"><img src={Logo} alt="Логотип DevOil" /></Link>
             </div>
 
             {/* Навигация */}

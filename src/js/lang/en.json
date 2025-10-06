@@ -1,9 +1,9 @@
 {
   "header": {
     "catalog": "Catalog",
-    "about": "About",
+    "about": "About Us",
     "contacts": "Contacts",
-    "consultation": "Get consultation"
+    "consultation": "Get a Consultation"
   },
   "footer": {
     "logo-alt": "DevOil Logo",
@@ -33,136 +33,136 @@
     "privacy-policy": "Privacy Policy"
   },
   "banner": {
-    "title": "Highly refined oils",
-    "undertitle": "Highly pure, purified, meets all quality standards and norms",
-    "button": "Contact us"
+    "title": "Highly Refined Oils",
+    "undertitle": "Ultra-pure, thoroughly refined, fully compliant with all quality standards and regulations",
+    "button": "Contact Us"
   },
   "steps": {
     "title": "Cooperation Stages",
     "items": [
       {
-        "title": "Submit a Request",
-        "undertitle": "Send your inquiry via the website. Specify the desired volume, application, and oil requirements."
+        "title": "Submit Your Request",
+        "undertitle": "Send your inquiry via our website. Please specify the required volume, intended use, and oil specifications."
       },
       {
-        "title": "Receive Commercial Offer",
-        "undertitle": "Our manager contacts you, clarifies details, and sends a price list, certificates, and delivery terms."
+        "title": "Receive a Commercial Offer",
+        "undertitle": "Our manager will contact you to clarify details and send you our price list, certificates, and delivery terms."
       },
       {
-        "title": "Confirm Delivery",
-        "undertitle": "After agreement, we reserve the product and prepare full documentation package — UTD, quality passport."
+        "title": "Confirm Your Order",
+        "undertitle": "Once confirmed, we reserve your product and prepare all necessary documentation—Universal Transfer Document (UTD) and Certificate of Quality."
       },
       {
-        "title": "Organize Delivery",
-        "undertitle": "We provide complete set of accompanying documents: UTD and quality passport."
+        "title": "Arrange Delivery",
+        "undertitle": "We provide a complete set of shipping documents: Universal Transfer Document (UTD) and Certificate of Quality."
       }
     ]
   },
   "catalog": {
     "title": "Product Catalog",
-    "item-1-segment": "Standard",
+    "item-1-segment": "Premium",
     "item-1-title": "White Oils",
-    "item-1-description": "Highly refined mineral oils for cosmetic, pharmaceutical, food, and industrial applications",
+    "item-1-description": "Highly refined, premium-grade mineral oils for technical and lubrication industries.",
     "item-1-usage-item-1": "Technical",
-    "item-1-usage-item-2": "Lubricant",
-    "item-2-segment": "Premium",
-    "item-2-title": "Petrolatum Oils",
-    "item-2-description": "Highly refined medical and technical petrolatum oils for various industrial applications",
+    "item-1-usage-item-2": "Lubrication",
+    "item-2-segment": "Standard",
+    "item-2-title": "Vaseline Oils",
+    "item-2-description": "Highly refined medical and technical vaseline oils for use in cosmetics, food, and medicine.",
     "item-2-usage-item-1": "Cosmetics",
     "item-2-usage-item-2": "Food",
-    "item-2-usage-item-3": "Pharmaceuticals",
+    "item-2-usage-item-3": "Medicine",
     "item-3-segment": "Industrial",
     "item-3-title": "Gear Oils",
-    "item-3-description": "Specialized oils for gearboxes, transmissions, and heavy industrial equipment — reliable and durable",
+    "item-3-description": "Specialized oils for gearboxes, transmissions, and heavy industrial equipment—reliable and long-lasting",
     "item-3-usage-item-1": "Gearboxes",
     "item-3-usage-item-2": "Technical",
     "item-3-usage-item-3": "Transmissions",
     "btn-more": "More"
   },
   "contact_form": {
-    "title": "Request a quote",
-    "description": "Send your contact details — we’ll send you our wholesale price list, delivery terms, and certificates",
+    "title": "Submit a Request",
+    "description": "Leave your contact details, and we’ll send you our wholesale price list, delivery terms, and certificates.",
     "fields": {
       "last_name": {
         "label": "Last Name *",
-        "error": "Enter your last name"
+        "error": "Please enter your last name"
       },
       "first_name": {
         "label": "First Name *",
-        "error": "Enter your first name"
+        "error": "Please enter your first name"
       },
       "email": {
         "label": "Email *",
-        "error": "Enter your email",
-        "error-valid": "Please enter a valid email, for example example@mail.ru"
+        "error": "Please enter your email",
+        "error-valid": "Please enter a valid email address, e.g., example@mail.ru"
       },
       "phone": {
         "label": "Phone Number *",
-        "error": "Enter your phone number",
-        "error-valid": "Please enter a valid number, for example +79999999999"
+        "error": "Please enter your phone number",
+        "error-valid": "Please enter a valid phone number, e.g., +79999999999"
       },
       "comment": {
         "label": "Comment"
       }
     },
     "consent": {
-      "text": "I agree to the processing of my personal data for communication and business purposes. I have read and accept the ",
+      "text": "I consent to the processing of my personal data for communication and business purposes. I have read and agree with the ",
       "link_text": "Privacy Policy."
     },
     "submit_button": "Submit Request",
     "submit_button_loading": "Sending...",
     "alerts": {
-      "good": "Your request has been sent! We will contact you.",
-      "error": "You must consent to the processing of personal data.",
-      "error-server": "Failed to submit your request. Please check your internet connection or try again later."
+      "good": "Your request has been sent! We’ll contact you shortly.",
+      "error": "You must consent to the processing of your personal data.",
+      "error-server": "Failed to send your request. Please check your internet connection or try again later."
     }
   },
   "about-company": {
-    "title": "About company",
+    "title": "About Us",
     "about-company-block": {
-      "title": "A reliable supplier of highly refined base oils",
-      "description": "Devoil is a company specializing in the supply of high—quality base oils used in industry, energy, cosmetics and pharmaceuticals. We provide enterprises throughout Russia and the near abroad with stable supplies of oils that meet international quality standards. Our goal is to be a reliable partner for manufacturers, offering flexible terms of cooperation, a wide range and guaranteed product quality.",
+      "title": "Reliable Supplier of Highly Refined Base Oils",
+      "description": "Devoil specializes in supplying high-quality base oils used across industrial, energy, cosmetic, and pharmaceutical sectors. We provide stable, reliable deliveries throughout Russia and the CIS countries, ensuring our products meet international quality standards. Our mission is to become a trusted partner for manufacturers by offering flexible cooperation terms, a wide product range, and guaranteed quality.",
       "advantages": {
-        "first-advantage": "Modern equipment",
-        "second-advantage": "An experienced team"
+        "first-advantage": "Modern Equipment",
+        "second-advantage": "Experienced Team"
       },
       "buttons": {
-        "our-products": "Our products",
-        "request-a-quote": "Request a quote"
+        "our-products": "Our Products",
+        "request-a-quote": "Submit a Request"
       }
     },
-      "production-process": {
-        "title": "The production process",
-        "items": {
-          "item-1": {
-            "title": "Raw material",
-            "description": "Procurement of high-quality raw materials from verified suppliers"
-          },
-          "item-2": {
-            "title": "Production",
-            "description": "Modern production technologies with innovative approaches"
-          },
-          "item-3": {
-            "title": "Quality control",
-            "description": "Multi-stage quality control at every step"
-          },
-          "item-4": {
-            "title": "Packaging",
-            "description": "Packaging in sealed containers according to all required transportation conditions to maintain the highest product quality"
-          },
-          "item-5": {
-            "title": "Delivery",
-            "description": "Fast and reliable worldwide delivery with flexible terms"
-          }
+    "production-process": {
+      "title": "Production Process",
+      "items": { 
+        "item-1": {
+          "title": "Raw Materials",
+          "description": "Sourcing high-quality raw materials from trusted suppliers"
+        },
+        "item-2": {
+          "title": "Production",
+          "description": "State-of-the-art production technologies with innovative approaches"
+        },
+        "item-3": {
+          "title": "Quality Control",
+          "description": "Multi-stage quality control at every production step"
+        },
+        "item-4": {
+          "title": "Packaging",
+          "description": "Sealed packaging meeting all transportation requirements to preserve the product’s premium quality"
+        },
+        "item-5": {
+          "title": "Delivery",
+          "description": "Fast and reliable worldwide shipping with flexible terms"
         }
-      },
-      "collaborate": {
-        "title": "Are you ready to cooperate?",
-        "description": "Become our partner and get access to products at competitive prices.",
-        "button": "Contact us"
       }
     },
-    "contacts": {
+    "collaborate": {
+        "title": "Ready to Partner?",
+        "description": "Become our partner and gain access to premium products at competitive prices",
+        "button": "Contact Us"
+      }
+  },
+  "contacts": {
     "title": "Contact Information",
     "our-contacts": {
       "title": "Our Contacts",
