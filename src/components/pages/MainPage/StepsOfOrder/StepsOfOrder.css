@@ -1,4 +1,3 @@
-/* === ОБЩИЕ СТИЛИ === */
 .steps-of-order {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -38,7 +37,6 @@
   line-height: 120%;
 }
 
-/* === КОНТЕЙНЕР АНИМАЦИИ ПОЯВЛЕНИЯ === */
 .step-item-text-container {
     width: 1100px;
   opacity: 0;
@@ -47,7 +45,7 @@
 }
 
 .slide-left-steps.step-item-text-container {
-    width: 1100px;
+  width: 1100px;
   transform: translateX(-50px);
 }
 
@@ -57,12 +55,10 @@
   transform: translateX(0);
 }
 
-/* === ОСНОВНОЙ ТЕКСТОВЫЙ БЛОК (hover) === */
 .step-item-text {
   border-right: 3px solid #d29d19;
   width: 100%;
   border-radius: 30px;
-  /* ЕДИНЫЙ padding для всех блоков */
   padding: 30px 0px 30px 30px;
   display: flex;
   flex-direction: column;
@@ -75,14 +71,12 @@
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* HOVER: scale + тень */
 .step-item:hover > .step-item-text-container > .step-item-text {
   z-index: 100;
   transform: scale(1.02);
   box-shadow: 20px 20px 20px rgba(30, 58, 95, 0.15);
 }
 
-/* Заголовок */
 .step-item-title {
   font-weight: 700;
   font-size: 24px;
@@ -91,16 +85,14 @@
   text-align: start;
 }
 
-/* Подзаголовок */
 .step-item-undertitle {
-  width: 1040px;
+  width: 1050px;
   font-weight: 400;
   font-size: 18px;
   line-height: 162%;
   color: #233446;
 }
 
-/* Заголовок секции */
 .steps-of-partnership {
   margin-bottom: 10px;
   font-weight: 600;
@@ -108,7 +100,6 @@
   color: #233446;
 }
 
-/* === ЧЁТНЫЕ ШАГИ: зеркальное отображение === */
 #step2,
 #step4 {
   display: flex;

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
-export function useSlideIn({ threshold = 0.1, rootMargin = '0px' } = {}) {
+export function useSlideIn({ threshold = 0.1, rootMargin = '100px' } = {}) {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 

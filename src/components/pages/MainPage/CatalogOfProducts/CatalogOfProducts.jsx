@@ -28,7 +28,7 @@ export default function CatalogOfProducts() {
               {/* Белые масла — левый блок */}
               <div
                 ref={leftRef}
-                 className={`catalog-of-products-item slide-left-catalog ${isLeftVisible ? 'visible' : ''}`}
+                className={`catalog-of-products-item slide-left-catalog ${isLeftVisible ? 'visible' : ''}`}
               >
                 <div className="item-image item-image-1">
                   <p className="item-segment item-segment-1">{t('catalog.title')}</p>
@@ -41,7 +41,6 @@ export default function CatalogOfProducts() {
                 <div className="item-usage item-usage-1">
                   <p className="usage-item usage-item-1">{t('catalog.item-1-usage-item-1')}</p>
                   <p className="usage-item usage-item-1">{t('catalog.item-1-usage-item-2')}</p>
-                  <p className="usage-item usage-item-1">{t('catalog.item-1-usage-item-3')}</p>
                 </div>
                 <a href="" className="item-button-more item-button-more-1">{t('catalog.btn-more')}</a>
               </div>
