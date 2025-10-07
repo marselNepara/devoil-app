@@ -38,7 +38,7 @@ export default function Header() {
             </div>
 
             {/* Бургер */}
-            <button
+            <p
               className="burger-menu"
               onClick={toggleMobileMenu}
               aria-label="Меню"
@@ -46,7 +46,7 @@ export default function Header() {
               <span></span>
               <span></span>
               <span></span>
-            </button>
+            </p>
 
             {/* Десктоп */}
             <nav className="header-nav">

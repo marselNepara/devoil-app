@@ -55,3 +55,57 @@
 .banner-button:hover{
     background: #E0B445;  
 }
+@media (max-width: 768px) { 
+  .banner-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    margin: 0;  
+  }
+  .bannner-card{
+    height: min-content;
+    padding: 40px 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-title{
+    text-align: center;
+    max-width: 500px;
+    font-size: 32px;
+  }
+  .banner-undertitle{
+    text-align: center;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    margin: 0;  
+  }
+  .bannner-card{
+    height: min-content;
+    padding: 40px 30px;
+    align-items: center;
+    justify-content: center;
+        gap: 15px;
+  }
+  .banner-title{
+    text-align: center;
+    max-width: 250px;
+    font-size: 22px;
+  }
+  .banner-undertitle{
+    text-align: center;
+    font-size: 16px;
+    max-width: 250px;
+  }
+  .banner-button{
+    font-size: 14px;
+  }
+}
