@@ -40,101 +40,136 @@ export default function Header() {
   const toggleLangDropdown = () => setIsLangDropdownOpen(prev => !prev);
   const toggleMobileMenu = () => setIsMobileMenuOpen(prev => !prev);
 
-  return (
-    <>
-      {/* Отступ под фиксированный хедер на мобильных */}
-      <div className="header-spacer"></div>
+return (
+  <>
+    <div className="header-spacer"></div>
 
-      <header className={`header ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
-        <div className="container">
-          <div className="header-inner">
-            {/* Логотип */}
-            <div className="logo">
-              <Link to="/" onClick={closeMobileMenu}>
-                <img src={Logo} alt="Логотип DevOil" />
-              </Link>
-            </div>
+    <header className={`header ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
+      <div className="container">
+        <div className="header-inner">
+          {/* Логотип */}
+          <div className="logo">
+            <Link to="/" onClick={closeMobileMenu}>
+              <img src={Logo} alt="Логотип DevOil" />
+            </Link>
+          </div>
 
-            {/* Бургер-меню (только на мобильных) */}
-            <p
-              className="burger-menu"
-              onClick={toggleMobileMenu}
-              aria-label="Меню"
-              aria-expanded={isMobileMenuOpen}
+          {/* Переключатель языка — ТОЛЬКО НА МОБИЛЬНЫХ */}
+          <div className="header-language mobile-header-language">
+            <button
+              type="button"
+              className="language-toggle"
+              onClick={toggleLangDropdown}
+              aria-expanded={isLangDropdownOpen}
             >
-              <span></span>
-              <span></span>
-              <span></span>
-            </p>
+              <img src={currentFlag} alt={currentLabel} width="20" height="15" />
+              {currentLabel}
+            </button>
 
-            {/* Навигация и элементы (для десктопа) */}
-            <nav className="header-nav">
-              <a href="#catalog" className="header-nav-link" onClick={closeMobileMenu}>
-                {t('header.catalog')}
-              </a>
-              <a href="#aboutcompany" className="header-nav-link" onClick={closeMobileMenu}>
-                {t('header.about')}
-              </a>
-              <a href="#contacts" className="header-nav-link" onClick={closeMobileMenu}>
-                {t('header.contacts')}
-              </a>
-            </nav>
-
-            <div className="header-bid-lang">
-              <a href="#bid" className="get-consultation" onClick={closeMobileMenu}>
-                {t('header.consultation')}
-              </a>
-
-              <div className="header-language">
-                <button
-                  type="button"
-                  className="language-toggle"
-                  onClick={toggleLangDropdown}
-                  aria-expanded={isLangDropdownOpen}
+            <ul className={`language-dropdown ${isLangDropdownOpen ? 'visible' : ''}`}>
+              <li>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    changeLanguage('ru');
+                  }}
                 >
-                  <img src={currentFlag} alt={currentLabel} width="20" height="15" />
-                  {currentLabel}
-                </button>
+                  <img src={RussianFlag} alt="Ru" width="20" height="15" /> Ru
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    changeLanguage('en');
+                  }}
+                >
+                  <img src={BritainFlag} alt="En" width="20" height="15" /> En
+                </a>
+              </li>
+            </ul>
+          </div>
 
-                <ul className={`language-dropdown ${isLangDropdownOpen ? 'visible' : ''}`}>
-                  <li>
-                    <a
-                      href="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        changeLanguage('ru');
-                        closeMobileMenu();
-                      }}
-                    >
-                      <img src={RussianFlag} alt="Ru" width="20" height="15" /> Ru
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        changeLanguage('en');
-                        closeMobileMenu();
-                      }}
-                    >
-                      <img src={BritainFlag} alt="En" width="20" height="15" /> En
-                    </a>
-                  </li>
-                </ul>
-              </div>
+          {/* Бургер-меню */}
+          <p
+            className="burger-menu"
+            onClick={toggleMobileMenu}
+            aria-label="Меню"
+            aria-expanded={isMobileMenuOpen}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </p>
+
+          {/* Десктопная навигация и кнопка */}
+          <nav className="header-nav">
+            <a href="#catalog" className="header-nav-link" onClick={closeMobileMenu}>
+              {t('header.catalog')}
+            </a>
+            <a href="#aboutcompany" className="header-nav-link" onClick={closeMobileMenu}>
+              {t('header.about')}
+            </a>
+            <a href="#contacts" className="header-nav-link" onClick={closeMobileMenu}>
+              {t('header.contacts')}
+            </a>
+          </nav>
+
+          <div className="header-bid-lang">
+            <a href="#bid" className="get-consultation" onClick={closeMobileMenu}>
+              {t('header.consultation')}
+            </a>
+
+            {/* Переключатель языка — ТОЛЬКО НА ДЕСКТОПЕ */}
+            <div className="header-language desktop-header-language">
+              <button
+                type="button"
+                className="language-toggle"
+                onClick={toggleLangDropdown}
+                aria-expanded={isLangDropdownOpen}
+              >
+                <img src={currentFlag} alt={currentLabel} width="20" height="15" />
+                {currentLabel}
+              </button>
+
+              <ul className={`language-dropdown ${isLangDropdownOpen ? 'visible' : ''}`}>
+                <li>
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      changeLanguage('ru');
+                    }}
+                  >
+                    <img src={RussianFlag} alt="Ru" width="20" height="15" /> Ru
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      changeLanguage('en');
+                    }}
+                  >
+                    <img src={BritainFlag} alt="En" width="20" height="15" /> En
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Мобильное меню */}
-        <div className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}>
-
+      {/* Мобильное меню — БЕЗ языка */}
+      <div className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}>
         <div className="burger-menu-logo">
-              <Link to="/" onClick={closeMobileMenu}>
-                <img src={Logo} alt="Логотип DevOil" />
-              </Link>
-            </div>
+          <Link to="/" onClick={closeMobileMenu}>
+            <img src={Logo} alt="Логотип DevOil" />
+          </Link>
+        </div>
         <nav className="mobile-nav">
           <a href="#catalog" className="mobile-nav-link" onClick={closeMobileMenu}>
             {t('header.catalog')}
@@ -148,46 +183,9 @@ export default function Header() {
           <a href="#bid" className="mobile-consultation" onClick={closeMobileMenu}>
             {t('header.consultation')}
           </a>
-
-          <div className="mobile-language">
-            <button
-              type="button"
-              className="language-toggle"
-              onClick={toggleLangDropdown}
-            >
-              <img src={currentFlag} alt={currentLabel} width="20" height="15" />
-              {currentLabel}
-            </button>
-            <ul className={`language-dropdown ${isLangDropdownOpen ? 'visible' : ''}`}>
-              <li>
-                <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    changeLanguage('ru');
-                    closeMobileMenu();
-                  }}
-                >
-                  <img src={RussianFlag} alt="Ru" width="20" height="15" /> Ru
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    changeLanguage('en');
-                    closeMobileMenu();
-                  }}
-                >
-                  <img src={BritainFlag} alt="En" width="20" height="15" /> En
-                </a>
-              </li>
-            </ul>
-          </div>
         </nav>
       </div>
-      </header>
-    </>
-  );
+    </header>
+  </>
+);
 }
