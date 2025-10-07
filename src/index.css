@@ -2,6 +2,7 @@
 font-family: "Montserrat", sans-serif;
 border: none;
 outline: none;
+box-sizing: border-box; 
 }
 html, body{
   margin: 0;
@@ -139,8 +140,13 @@ section{
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+    max-width: 768px; /* ← явно ограничиваем */
+  }
 }
 
 @media (max-width: 576px) {
+  
   
 }

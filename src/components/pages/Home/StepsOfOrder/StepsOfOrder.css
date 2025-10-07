@@ -38,7 +38,8 @@
 }
 
 .step-item-text-container {
-    width: 1100px;
+  width: 100%; /* ← растягивается на контейнер */
+  max-width: 1100px; /* ← но не больше этого на десктопе */
   opacity: 0;
   transform: translateX(50px);
   transition: opacity 1s ease, transform 1s ease;
@@ -86,7 +87,8 @@
 }
 
 .step-item-undertitle {
-  width: 1050px;
+  width: 100%; /* ← теперь адаптивный */
+  max-width: 1050px; /* ← ограничение только на десктопе */
   font-weight: 400;
   font-size: 18px;
   line-height: 162%;
@@ -138,4 +140,50 @@
 .step-item-text-container {
   display: flex;
   flex-shrink: 0; /* предотвращает сжатие */
+}
+@media (max-width: 768px) {
+  .steps-of-order{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100vw;
+  }
+  .steps-of-partnership, .step-item-title{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .steps-of-order-inner{
+    padding: 0 30px;
+  }
+  .step-item-number-container{
+    display: none;
+  }
+  .step-item-text-container{
+    max-width: 100%;
+  }
+  .step-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .step-item-text{
+    width: 100%;
+    border: none;
+    padding: 30px;
+  }
+  #step2 > .step-item-text-container>.step-item-text, #step4 > .step-item-text-container>.step-item-text{
+    border: none;
+  }
+  .step-item-undertitle{
+  max-width: 100%;  
+  text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .steps-of-partnership{
+    font-size: 26px;
+  }
 }
