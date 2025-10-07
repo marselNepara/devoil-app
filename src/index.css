@@ -12,10 +12,12 @@ html, body{
 a, h1, h2, h3, h4, h5, h6, p{
   text-decoration: none;
   margin: 0;
-  padding: 0;
+  padding: 0; 
 }
-.container{
-  width: 1200px;
+.container {
+  width: 100%; 
+  max-width: 1240px;
+  margin: 0 auto;
 }
 button{
   width: fit-content;
@@ -136,4 +138,12 @@ section{
   display: block;
 }
 
+@media (max-width: 768px) {
+  .container{
+    
+  }
+}
 
+@media (max-width: 576px) {
+  
+}

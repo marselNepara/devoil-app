@@ -1,6 +1,5 @@
 import { useParams } from 'react-router-dom';
 
-// Пример данных (в реальности — из API или JSON)
 const categories = {
   'white-oils': {
     title: 'Белые масла',

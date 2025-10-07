@@ -1,3 +1,23 @@
+@media (max-width: 768px) {
+  .catalog-of-products-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+}
+
+/* Для смартфонов и менее */
+@media (max-width: 576px) {
+  .catalog-of-products-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+}
 .catalog-of-products {
   width: 100%;
   display: flex;
@@ -9,7 +29,7 @@
 .catalog-of-products-inner {
   display: flex;
   flex-direction: column;
-    gap: 30px;
+  gap: 30px;
 }
 .catalog-of-products-items {
   display: flex;
