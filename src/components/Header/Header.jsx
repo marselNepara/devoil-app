@@ -38,7 +38,7 @@ export default function Header() {
             </div>
 
             {/* Бургер */}
-            <p
+            <p  
               className="burger-menu"
               onClick={toggleMobileMenu}
               aria-label="Меню"

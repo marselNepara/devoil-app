@@ -300,9 +300,10 @@ border-radius: 8px;
   .about-company-title{
     text-align: center;
     width: 100%;
+    font-size: 28px;
   }
   .about-company-main-block-image{
-    padding: 80px;
+    padding: 70px 180px;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -317,9 +318,16 @@ border-radius: 8px;
     max-width: 630px;
     text-align: center;
   }
+  .step-description >h3{
+    font-size: 16px;
+  }
+  .step-description >p{
+    font-size: 14px;
+  }
   .production-process-block-title{
     width: 100%;
     text-align: center;
+    font-size: 22px;
   }
   .process-steps{
     display: flex;
@@ -350,6 +358,7 @@ border-radius: 8px;
   }
   .collaborate-title{
     text-align: center;
+    font-size: 22px;
   }
   .step-content{
     border: none;
@@ -357,6 +366,9 @@ border-radius: 8px;
     justify-content: center;
     display: flex;
     flex-direction: column;
+  }
+  .collaborate-description{
+    font-size: 14px;
   }
   .step-description{
     text-align: center;

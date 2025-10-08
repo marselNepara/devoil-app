@@ -225,13 +225,23 @@ padding-bottom: 20px;
 }
 
 @media (max-width: 1024px) {
-  .catalog-of-products-title{
+  .catalog-of-products-title.visible {
     text-align: center;
+    font-size: 28px;
+  }
+  .item-title{
+    font-size: 22px;
+  }
+  .item-description{
+    font-size: 16px;
   }
   .catalog-of-products-items{
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+  .item-button-more{
+    font-size: 16px;
   }
   .catalog-of-products-item{
     width: 100%;
@@ -246,7 +256,6 @@ padding-bottom: 20px;
 }
 
 @media (max-width: 576px) {
-  
   .item-usage{
     display: flex;
     flex-wrap: wrap;

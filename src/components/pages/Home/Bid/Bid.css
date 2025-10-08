@@ -85,6 +85,7 @@
         display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30px;
   }
   .bid-description{
     text-align: center;
@@ -94,6 +95,9 @@
   .bid-title{
     text-align: center;
     font-size: 28px;
+  }
+  .bid-description{
+    font-size: 22px;
   }
   .bid-row{
     width: 100%;
@@ -107,6 +111,10 @@
    }
    .form-input, .form-textarea{
     width: 100%;
+    font-size: 16px;
+   }
+   .checkbox-text{
+    font-size: 14px;
    }
 }
 

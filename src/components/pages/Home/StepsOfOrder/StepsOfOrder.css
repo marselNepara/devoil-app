@@ -154,9 +154,16 @@
     width: 100%;
     margin-bottom: 0;
   }
-      .steps-of-partnership{
-      margin-bottom: 10px;
-    }
+  .steps-of-partnership{
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .step-item-title{
+    font-size: 22px;
+  } 
+  .step-item-undertitle{
+    font-size: 16px;
+  }
   .step-item-number-container{
     display: none;
   }
@@ -184,7 +191,5 @@
 }
 
 @media (max-width: 576px) {
-  .steps-of-partnership{
-    font-size: 26px;
-  }
+
 }

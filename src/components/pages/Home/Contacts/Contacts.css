@@ -116,6 +116,7 @@ color: #233446;
 @media (max-width: 1024px) {
   .contacts-title{
     text-align: center;
+    font-size: 28px;
   }
   .contacts-items{
     display: flex;
@@ -123,6 +124,13 @@ color: #233446;
   }
   .contact-item-title{
     margin-bottom: 20px;
+    font-size: 22px;
+  }
+  .our-contacts-title{
+    font-size: 14px;
+  }
+  .our-contacts-description{
+    font-size: 16px;
   }
 }
 

@@ -76,12 +76,22 @@
   max-height: 25px;
 }
 @media (max-width: 1024px) {
-  .footer{
-    display: none;
-  }
+
 }
 
 @media (max-width: 576px) {
-  
-  
+    .footer-inner{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    justify-content: space-between;
+  }
+  .footer-inner>.logo{
+    margin-right: 50%;
+  }
+  .footer-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
