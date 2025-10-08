@@ -284,3 +284,62 @@ border-radius: 8px;
   opacity: 1;
   transform: translateX(0);
 }
+@media (max-width: 768px) {
+  .about-company-main-block-inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about-company-main-block-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-company-title{
+    text-align: center;
+    width: 100%;
+  }
+  .about-company-main-block-image{
+    padding: 80px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-company-main-block-title{
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    max-width: 600px;
+  }
+  .about-company-main-block-descriprion{
+    width: 100%;
+    max-width: 630px;
+    text-align: center;
+  }
+  .production-process-block-title{
+    width: 100%;
+    text-align: center;
+  }
+  .process-steps{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .step{
+    width: 30%;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-company-main-block-image{
+    padding: 70px;
+  }
+    .step{
+    width: 40%;
+  }
+  .step-name{
+    font-size: 12px;
+  }
+}

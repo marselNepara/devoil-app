@@ -5,7 +5,7 @@
   justify-content: center;
 }
 .bid-inner {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: start;
   align-items: start;
@@ -74,4 +74,42 @@
 .bid-block.visible{
   opacity: 1;
   transform: translateX(0);
+}
+@media (max-width: 768px) {
+  .bid-inner{
+    width: 100%;
+    background: none;
+  }
+  .bid-block{
+    width: 100%;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bid-description{
+    text-align: center;
+    max-width: 100%;
+    min-width: auto;
+  }
+  .bid-title{
+    text-align: center;
+    font-size: 28px;
+  }
+  .bid-row{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .bid-row-item{
+    width: 100%
+   }
+   .form-group{
+    width: 100%;
+   }
+   .form-input, .form-textarea{
+    width: 100%;
+   }
+}
+
+@media (max-width: 576px) {
+  
 }

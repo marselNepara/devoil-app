@@ -35,10 +35,12 @@ export default function CatalogOfProducts() {
                   <p className="item-segment item-segment-1">{t('catalog.item-1-segment')}</p>
                   <img src={CanisterImg} alt="Белые масла" />
                 </div>
-                <h2 className="item-title">{t('catalog.item-1-title')}</h2>
-                <p className="item-description">
-                  {t('catalog.item-1-description')}
-                </p>
+                <div className="item-text">
+                  <h2 className="item-title">{t('catalog.item-1-title')}</h2>
+                  <p className="item-description">
+                    {t('catalog.item-1-description')}
+                  </p>
+                </div>
                 <div className="item-usage item-usage-1">
                   <p className="usage-item usage-item-1">{t('catalog.item-1-usage-item-1')}</p>
                   <p className="usage-item usage-item-1">{t('catalog.item-1-usage-item-2')}</p>
@@ -52,10 +54,13 @@ export default function CatalogOfProducts() {
                   <p className="item-segment item-segment-2">{t('catalog.item-2-segment')}</p>
                   <img src={BottleImg} alt="Вазелиновые масла" />
                 </div>
-                <h2 className="item-title">{t('catalog.item-2-title')}</h2>
-                <p className="item-description">
-                 {t('catalog.item-2-description')}
-                </p>
+                <div className="item-text">
+                  <h2 className="item-title">{t('catalog.item-2-title')}</h2>
+                  <p className="item-description">
+                  {t('catalog.item-2-description')}
+                  </p>
+                </div>
+                
                 <div className="item-usage item-usage-2">
                   <p className="usage-item usage-item-2">{t('catalog.item-2-usage-item-1')}</p>
                   <p className="usage-item usage-item-2">{t('catalog.item-2-usage-item-2')}</p>
@@ -73,10 +78,12 @@ export default function CatalogOfProducts() {
                   <p className="item-segment item-segment-3">{t('catalog.item-3-segment')}</p>
                   <img src={GearImg} alt="Редукторные масла" />
                 </div>
-                <h2 className="item-title">{t('catalog.item-3-title')}</h2>
-                <p className="item-description">
-                  {t('catalog.item-3-description')}
-                </p>
+                <div className="item-text">
+                  <h2 className="item-title">{t('catalog.item-3-title')}</h2>
+                  <p className="item-description">
+                    {t('catalog.item-3-description')}
+                  </p>
+                </div>
                 <div className="item-usage item-usage-3">
                   <p className="usage-item usage-item-3">{t('catalog.item-3-usage-item-1')}</p>
                   <p className="usage-item usage-item-3">{t('catalog.item-3-usage-item-2')}</p>
