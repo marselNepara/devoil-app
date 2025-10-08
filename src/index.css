@@ -3,7 +3,7 @@ font-family: "Montserrat", sans-serif;
 border: none;
 outline: none;
 box-sizing: border-box;
-outline: 1px solid green; 
+/* outline: 1px solid green;  */
 }
 html, body{
   margin: 0;
