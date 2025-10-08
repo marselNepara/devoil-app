@@ -330,6 +330,13 @@ border-radius: 8px;
   .step{
     width: 30%;
   }
+  .about-company-main-block-advantage-item{
+    text-align: center;
+  }
+  .about-company-main-block-link{
+    text-align: center;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -342,4 +349,10 @@ border-radius: 8px;
   .step-name{
     font-size: 12px;
   }
+  .about-company-main-block-descriprion{
+        font-size: 14px;
+  }
+   .about-company-main-block-title{
+    font-size: 16px;
+   }
 }
