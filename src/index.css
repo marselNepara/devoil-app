@@ -140,14 +140,14 @@ section{
   display: block;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1350px) {
   .container {
     padding: 0 30px;
     max-width: 1024px; /* ← явно ограничиваем */
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 650px) {
   
   
 }

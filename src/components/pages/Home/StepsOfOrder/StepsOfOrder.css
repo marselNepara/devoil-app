@@ -141,7 +141,7 @@
   display: flex;
   flex-shrink: 0; /* предотвращает сжатие */
 }
-@media (max-width: 1024px) {
+@media (max-width: 1350px) {
   .steps-of-order{
     display: flex;
     margin-top: 30px;
@@ -190,6 +190,6 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 650px) {
 
 }

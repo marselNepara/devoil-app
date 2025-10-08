@@ -55,7 +55,7 @@
 .banner-button:hover{
     background: #E0B445;  
 }
-@media (max-width: 1024px) { 
+@media (max-width: 1350px) { 
   .banner-inner{
     width: 100%;
     display: flex;
@@ -81,7 +81,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 650px) {
   .banner-inner{
     display: flex;
     align-items: center;

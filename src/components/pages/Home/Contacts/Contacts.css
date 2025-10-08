@@ -113,7 +113,7 @@ color: #233446;
   opacity: 1;
   transform: translateX(0);
 }
-@media (max-width: 1024px) {
+@media (max-width: 1350px) {
   .contacts-title{
     text-align: center;
     font-size: 28px;
@@ -134,7 +134,7 @@ color: #233446;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 650px) {
   .mode-day{
     font-size: 12px;
   }

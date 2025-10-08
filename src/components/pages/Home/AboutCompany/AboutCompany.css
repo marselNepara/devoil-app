@@ -284,7 +284,7 @@ border-radius: 8px;
   opacity: 1;
   transform: translateX(0);
 }
-@media (max-width: 1024px) {
+@media (max-width: 1350px) {
   .about-company-main-block-inner{
     width: 100%;
     display: flex;
@@ -375,7 +375,7 @@ border-radius: 8px;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 650px) {
   .about-company-main-block-image{
     padding: 70px;
   }
@@ -396,7 +396,7 @@ border-radius: 8px;
     flex-direction: column;
     width: 100%;
   }
-   .about-company-main-block-title{
+  .about-company-main-block-title{
     font-size: 16px;
-   }
+  }
 }
