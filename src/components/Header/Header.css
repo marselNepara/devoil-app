@@ -215,7 +215,7 @@
 }
 
 /* === АДАПТИВ === */
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   /* Фиксация хедера */
   .burger-menu-logo{
     display: flex;
