@@ -6,7 +6,7 @@ export function useSlideIn({ threshold = 0.1, rootMargin = '100px', disableOnMob
 
   useEffect(() => {
     // Проверяем, нужно ли отключать анимацию на мобильных
-    const isMobile = disableOnMobile && window.innerWidth <= 768;
+    const isMobile = disableOnMobile && window.innerWidth <= 1024;
 
     if (isMobile) {
       // Сразу делаем видимым — без анимации
