@@ -2,6 +2,7 @@ import Header from '@components/Header/Header';
 import Footer from '@components/Footer/Footer';
 import { Outlet } from 'react-router-dom'; // ← важно!
 import './index.css';
+import CookieConsent from './components/CookieConsent/CookieConsent';
 
 export default function MainLayout() {
   return (
@@ -11,6 +12,7 @@ export default function MainLayout() {
         <Outlet />
       </main>
       <Footer />
+      <CookieConsent />
     </>
   );
 }
