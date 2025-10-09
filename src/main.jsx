@@ -13,8 +13,9 @@ const router = createBrowserRouter([
     element: <MainLayout />, // общий layout для всех основных страниц
     children: [
       { path: '/', element: <HomePage /> },
-      { path: '/catalog/:categorySlug', element: <OilCategoryPage /> },
       { path: '/privacy-policy', element: <Policy /> },
+      { path: '/catalog/:categorySlug', element: <OilCategoryPage /> },
+
     ],
   },
   // Страницы без layout'а (если понадобятся) — например, лендинг без хедера
