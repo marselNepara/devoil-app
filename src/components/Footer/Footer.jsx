@@ -1,3 +1,4 @@
+// Footer.jsx
 import './Footer.css';
 import Logo from '@assets/images/Header-Logo.svg';
 import PhoneImg from '@assets/images/footer-phone.svg';
@@ -5,10 +6,30 @@ import MailImg from '@assets/images/footer-mail.svg';
 import WhatsAppIcon from '@assets/images/whatsapp-icon.png';
 import TelegramIcon from '@assets/images/telegram-icon.png';
 import { useTranslation } from '@hooks/useTranslation';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+
 export default function Footer() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const currentYear = new Date().getFullYear();
+
+  // Функция прокрутки к секции
+  const handleScrollTo = (sectionId) => {
+    if (location.pathname === '/') {
+      // Уже на главной — скроллим
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      }
+    } else {
+      // Не на главной — переходим и передаём цель
+      navigate('/', { state: { scrollTo: sectionId } });
+    }
+  };
 
   return (
     <footer className="footer">
@@ -19,25 +40,31 @@ export default function Footer() {
 
             <div className="footer-column">
               <h2 className="footer-column-title">{t('footer.catalog.title')}</h2>
-              <Link to="catalog/white-oils" className="footer-column-link">
+              <Link to="/catalog/white-oils" className="footer-column-link">
                 {t('footer.catalog.items.white-oils')}
               </Link>
-              <Link to="catalog/vaseline-oils" className="footer-column-link">
+              <Link to="/catalog/vaseline-oils" className="footer-column-link">
                 {t('footer.catalog.items.vaseline-oils')}
               </Link>
-              <Link to="catalog/reducer-oils" className="footer-column-link">
+              <Link to="/catalog/reducer-oils" className="footer-column-link">
                 {t('footer.catalog.items.gear-oils')}
               </Link>
             </div>
 
             <div className="footer-column">
               <h2 className="footer-column-title">{t('footer.company.title')}</h2>
-              <a href="/#aboutcompany" className="footer-column-link">
+              <p
+                className="footer-column-link as-link"
+                onClick={() => handleScrollTo('aboutcompany')}
+              >
                 {t('footer.company.items.about')}
-              </a>
-              <a href="/#aboutcompany" className="footer-column-link">
+              </p>
+              <p
+                className="footer-column-link as-link"
+                onClick={() => handleScrollTo('aboutcompany')}
+              >
                 {t('footer.company.items.how-we-work')}
-              </a>
+              </p>
             </div>
 
             <div className="footer-column">
@@ -81,7 +108,7 @@ export default function Footer() {
             <p>
               &copy; {currentYear} DevOil. {t('footer.copyright')}
             </p>
-            <a href="/policy" target="_blank" className="footer-privacy-link">
+            <a href="/policy" target='_blank' className="footer-privacy-link">
               {t('footer.privacy-policy')}
             </a>
             <div className="footer-docs">

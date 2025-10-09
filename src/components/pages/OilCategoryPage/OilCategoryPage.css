@@ -1,0 +1,344 @@
+/* src/components/pages/OilCategoryPage/OilCategoryPage.css */
+.oil-category-page {
+  padding: 60px 0;
+  background-color: #f9fafb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.category-header,
+.information {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 20px;
+  width: 140px;
+  height: 140px;
+}
+
+.category-icon img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.category-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 15px;
+}
+
+.category-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  color: #233446;
+}
+
+.category-description {
+  font-size: 16px;
+  line-height: 150%;
+  color: #233446;
+  margin: 0;
+}
+
+.category-usage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.usage-tag {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Вкладки */
+.tabs {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tab-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #888;
+  cursor: pointer;
+  padding: 6px 0;
+  margin-bottom: 6px;
+}
+
+.tab-underline {
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+}
+
+/* Контент */
+.content {
+  width: 100%;
+}
+
+.content-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #233446;
+  margin-bottom: 20px;
+}
+
+.viscosities {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.viscosity {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.viscosity-value {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.viscosity-desc {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+/* Применение */
+.usage-content,
+.certs-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.application-card {
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.application-card h3 {
+  text-align: start;
+  font-size: 18px;
+  font-weight: 700;
+  color: #233446;
+  margin: 0 0 20px 0;
+}
+
+.application-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-size: 14px;
+  color: #233446;
+  line-height: 1.5;
+}
+
+.application-card li {
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.application-card li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #d29d19;
+}
+
+.advantages-section,
+.docs-section {
+  background-color: #f9fafb;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.advantages-section h3,
+.docs-section h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #233446;
+  margin: 0 0 20px 0;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.advantage-item {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.advantage-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #233446;
+  margin: 0 0 10px 0;
+}
+
+.advantage-item p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+/* Сертификаты */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.certs-column {
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.certs-column h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #233446;
+  margin: 0 0 15px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.certs-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.certs-column li {
+  padding: 12px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+}
+
+.certs-column li strong {
+  font-size: 14px;
+  color: #233446;
+  display: block;
+}
+
+.certs-column li p {
+  font-size: 12px;
+  color: #888;
+  margin: 4px 0 0 0;
+}
+
+/* Страница "не найдена" */
+.category-not-found {
+  padding: 200px 0;
+  text-align: center;
+}
+
+.not-found-block {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+  padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.not-found-block h2 {
+  font-size: 28px;
+  color: #233446;
+  margin: 0 0 16px 0;
+}
+
+.not-found-block p {
+  font-size: 16px;
+  color: #888;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .category-header,
+  .information {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .viscosities {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .applications-grid,
+  .advantages-grid,
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -114,6 +114,9 @@ color: #233446;
   transform: translateX(0);
 }
 @media (max-width: 1350px) {
+  .contacts{
+    margin-top: 30px;
+  }
   .contacts-title{
     text-align: center;
     font-size: 28px;

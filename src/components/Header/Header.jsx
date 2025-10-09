@@ -1,15 +1,17 @@
+// Header.jsx
 import "./Header.css";
 import Logo from '@assets/images/Header-Logo.svg';
 import { useState, useEffect } from 'react';
 import { useTranslation } from '@hooks/useTranslation';
-import { Link } from 'react-router-dom';
-import LanguageSwitcher from './LanguageSwitcher/LanguageSwitcher'; // ← путь может отличаться
+import { Link, useNavigate, useLocation } from 'react-router-dom'; // ← добавлены useNavigate и useLocation
+import LanguageSwitcher from '@hooks/LanguageSwitcher';
 
 export default function Header() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation(); // ← текущий путь
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Закрытие мобильного меню при изменении размера
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
@@ -21,7 +23,25 @@ export default function Header() {
   }, []);
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
-  const toggleMobileMenu = () => setIsMobileMenuOpen(prev => !prev);
+
+  // Обработчик клика по пункту меню
+  const handleScrollTo = (sectionId) => {
+    closeMobileMenu();
+
+    if (location.pathname === '/') {
+      // Уже на главной — скроллим
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      }
+    } else {
+      // Не на главной — переходим и передаём sectionId
+      navigate('/', { state: { scrollTo: sectionId } });
+    }
+  };
 
   return (
     <>
@@ -30,17 +50,15 @@ export default function Header() {
       <header className={`header ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
         <div className="container">
           <div className="header-inner">
-            {/* Логотип */}
             <div className="logo">
               <Link to="/" onClick={closeMobileMenu}>
                 <img src={Logo} alt="Логотип DevOil" />
               </Link>
             </div>
 
-            {/* Бургер */}
             <p  
               className="burger-menu"
-              onClick={toggleMobileMenu}
+              onClick={() => setIsMobileMenuOpen(prev => !prev)}
               aria-label="Меню"
             >
               <span></span>
@@ -50,22 +68,33 @@ export default function Header() {
 
             {/* Десктоп */}
             <nav className="header-nav">
-              <a href="/#catalog" className="header-nav-link" onClick={closeMobileMenu}>
+              <p 
+                className="header-nav-link"
+                onClick={() => handleScrollTo('catalog')}
+              >
                 {t('header.catalog')}
-              </a>
-              <a href="/#aboutcompany" className="header-nav-link" onClick={closeMobileMenu}>
+              </p>
+              <p
+                className="header-nav-link"
+                onClick={() => handleScrollTo('aboutcompany')}
+              >
                 {t('header.about')}
-              </a>
-              <a href="/#contacts" className="header-nav-link" onClick={closeMobileMenu}>
+              </p>
+              <p
+                className="header-nav-link"
+                onClick={() => handleScrollTo('contacts')}
+              >
                 {t('header.contacts')}
-              </a>
+              </p>
             </nav>
 
             <div className="header-bid-lang">
-              <a href="/#bid" className="get-consultation" onClick={closeMobileMenu}>
+              <button 
+                className="get-consultation"
+                onClick={() => handleScrollTo('bid')}
+              >
                 {t('header.consultation')}
-              </a>
-              {/* Язык — ТОЛЬКО НА ДЕСКТОПЕ */}
+              </button>
               <div className="desktop-header-language">
                 <LanguageSwitcher />
               </div>
@@ -73,7 +102,7 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Мобильное меню — БЕЗ языка */}
+        {/* Мобильное меню */}
         <div className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}>
           <div className="burger-menu-logo">
             <Link to="/" onClick={closeMobileMenu}>
@@ -81,22 +110,34 @@ export default function Header() {
             </Link>
           </div>
           <nav className="mobile-nav">
-            <a href="/#catalog" className="mobile-nav-link" onClick={closeMobileMenu}>
+            <button 
+              className="mobile-nav-link"
+              onClick={() => handleScrollTo('catalog')}
+            >
               {t('header.catalog')}
-            </a>
-            <a href="/#aboutcompany" className="mobile-nav-link" onClick={closeMobileMenu}>
+            </button>
+            <button 
+              className="mobile-nav-link"
+              onClick={() => handleScrollTo('aboutcompany')}
+            >
               {t('header.about')}
-            </a>
-            <a href="/#contacts" className="mobile-nav-link" onClick={closeMobileMenu}>
+            </button>
+            <button 
+              className="mobile-nav-link"
+              onClick={() => handleScrollTo('contacts')}
+            >
               {t('header.contacts')}
-            </a>
-            <a href="/#bid" className="mobile-consultation" onClick={closeMobileMenu}>
+            </button>
+            <button 
+              className="mobile-consultation"
+              onClick={() => handleScrollTo('bid')}
+            >
               {t('header.consultation')}
-            </a>
+            </button>
             <LanguageSwitcher />
           </nav>
         </div>
       </header>
     </>
   );
-}
+} 

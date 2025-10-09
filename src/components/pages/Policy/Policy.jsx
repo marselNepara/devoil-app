@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 export default function Policy() {
   const { t, lang } = useTranslation();
   useEffect(() => {
-    document.title = t('page-titles.policy_page_title') || 'Политика конфиденциальности';
+    document.title = t('page-titles.policy_page_title') || 'DevOil - Политика конфиденциальности';
   }, [t]);
   return (
     <section className="policy-section">

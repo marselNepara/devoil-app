@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { useTranslation } from '@hooks/useTranslation';
 import RussianFlag from '@assets/images/Russian-Flag.svg';
