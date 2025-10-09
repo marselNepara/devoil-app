@@ -1,4 +1,8 @@
 {
+  "page-titles": {
+    "main_page_title": "DevOil - Main Page",
+    "policy_page_title": "DevOil - Privacy Policy"
+  },
   "header": {
     "catalog": "Catalog",
     "about": "About Us",
@@ -180,5 +184,58 @@
       "sunday": "Sunday",
       "sunday-hours": "10:00 – 15:00"
     }
+  },
+  "policy": {
+    "title": "Privacy Policy",
+    "intro": "This Privacy Policy governs the processing and use of personal data obtained from website users.",
+    "sections": {
+      "general": {
+        "title": "1. General Provisions",
+        "text": "We respect your privacy and are committed to protecting your personal data. This Privacy Policy applies to all information we may collect about you when you use our website."
+      },
+      "collected_data": {
+        "title": "2. Information We Collect",
+        "items": [
+          "Full name (first name, last name, patronymic);",
+          "Email address;",
+          "Phone number;",
+          "Information provided by you in comments or contact forms."
+        ]
+      },
+      "purposes": {
+        "title": "3. Purposes of Personal Data Processing",
+        "text": "Personal data is processed exclusively for the following purposes:",
+        "items": [
+          "Responding to your inquiries;",
+          "Providing requested services;",
+          "Improving service quality;",
+          "Complying with the requirements of Russian Federation legislation."
+        ]
+      },
+      "third_parties": {
+        "title": "4. Disclosure to Third Parties",
+        "text": "We do not disclose your personal data to third parties, except as required by the legislation of the Russian Federation. Technical data processing (e.g., via hosting or analytics services) is carried out with appropriate confidentiality measures."
+      },
+      "cookies": {
+        "title": "5. Use of Cookies",
+        "text": "Cookies may be used on the website to ensure proper functionality (e.g., contact forms). Cookies do not contain personal data and are not used to identify individuals without your consent."
+      },
+      "user_rights": {
+        "title": "6. Your Rights",
+        "text": "You have the right to:",
+        "items": [
+          "Access information about what personal data we store about you;",
+          "Request correction or deletion of your personal data;",
+          "Withdraw your consent to data processing at any time."
+        ]
+      },
+      "contacts": {
+        "title": "7. Contact Information",
+        "text": "For any questions regarding the processing of personal data, please contact us:",
+        "email_label": "Email:",
+        "phone_label": "Phone:"
+      }
+    },
+    "effective_date": "Effective date: October 10, 2025"
   }
 }

@@ -4,8 +4,14 @@ import CatalogOfProducts from '@components/pages/Home/CatalogOfProducts/CatalogO
 import Bid from '@components/pages/Home/Bid/Bid';
 import AboutCompany from '@components/pages/Home/AboutCompany/AboutCompany';
 import Contacts from '@components/pages/Home/Contacts/Contacts';
+import { useEffect } from 'react';
+import { useTranslation } from '@/hooks/useTranslation';
 
 export default function HomePage() {
+  const { t, lang } = useTranslation();
+  useEffect(() => {
+      document.title = t('page-titles.main_page_title') || 'Политика конфиденциальности';
+    }, [t]);
   return (
     <>
       <Banner />

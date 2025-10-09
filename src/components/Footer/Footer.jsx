@@ -32,10 +32,10 @@ export default function Footer() {
 
             <div className="footer-column">
               <h2 className="footer-column-title">{t('footer.company.title')}</h2>
-              <a href="#aboutcompany" className="footer-column-link">
+              <a href="/#aboutcompany" className="footer-column-link">
                 {t('footer.company.items.about')}
               </a>
-              <a href="#aboutcompany" className="footer-column-link">
+              <a href="/#aboutcompany" className="footer-column-link">
                 {t('footer.company.items.how-we-work')}
               </a>
             </div>
@@ -81,7 +81,7 @@ export default function Footer() {
             <p>
               &copy; {currentYear} DevOil. {t('footer.copyright')}
             </p>
-            <a href="policy" className="footer-privacy-link">
+            <a href="/policy" target="_blank" className="footer-privacy-link">
               {t('footer.privacy-policy')}
             </a>
             <div className="footer-docs">

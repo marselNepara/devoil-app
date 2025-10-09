@@ -50,19 +50,19 @@ export default function Header() {
 
             {/* Десктоп */}
             <nav className="header-nav">
-              <a href="#catalog" className="header-nav-link" onClick={closeMobileMenu}>
+              <a href="/#catalog" className="header-nav-link" onClick={closeMobileMenu}>
                 {t('header.catalog')}
               </a>
-              <a href="#aboutcompany" className="header-nav-link" onClick={closeMobileMenu}>
+              <a href="/#aboutcompany" className="header-nav-link" onClick={closeMobileMenu}>
                 {t('header.about')}
               </a>
-              <a href="#contacts" className="header-nav-link" onClick={closeMobileMenu}>
+              <a href="/#contacts" className="header-nav-link" onClick={closeMobileMenu}>
                 {t('header.contacts')}
               </a>
             </nav>
 
             <div className="header-bid-lang">
-              <a href="#bid" className="get-consultation" onClick={closeMobileMenu}>
+              <a href="/#bid" className="get-consultation" onClick={closeMobileMenu}>
                 {t('header.consultation')}
               </a>
               {/* Язык — ТОЛЬКО НА ДЕСКТОПЕ */}
@@ -81,16 +81,16 @@ export default function Header() {
             </Link>
           </div>
           <nav className="mobile-nav">
-            <a href="#catalog" className="mobile-nav-link" onClick={closeMobileMenu}>
+            <a href="/#catalog" className="mobile-nav-link" onClick={closeMobileMenu}>
               {t('header.catalog')}
             </a>
-            <a href="#aboutcompany" className="mobile-nav-link" onClick={closeMobileMenu}>
+            <a href="/#aboutcompany" className="mobile-nav-link" onClick={closeMobileMenu}>
               {t('header.about')}
             </a>
-            <a href="#contacts" className="mobile-nav-link" onClick={closeMobileMenu}>
+            <a href="/#contacts" className="mobile-nav-link" onClick={closeMobileMenu}>
               {t('header.contacts')}
             </a>
-            <a href="#bid" className="mobile-consultation" onClick={closeMobileMenu}>
+            <a href="/#bid" className="mobile-consultation" onClick={closeMobileMenu}>
               {t('header.consultation')}
             </a>
             <LanguageSwitcher />

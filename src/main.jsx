@@ -6,6 +6,7 @@ import MainLayout from './MainLayout';
 // Pages
 import HomePage from '@components/pages/Home/HomePage';
 import OilCategoryPage from '@components/pages/OilCategoryPage/OilCategoryPage';
+import Policy from './components/pages/Policy/Policy';
 
 const router = createBrowserRouter([
   {
@@ -13,11 +14,11 @@ const router = createBrowserRouter([
     children: [
       { path: '/', element: <HomePage /> },
       { path: '/catalog/:categorySlug', element: <OilCategoryPage /> },
+      { path: '/policy', element: <Policy /> },
     ],
   },
   // Страницы без layout'а (если понадобятся) — например, лендинг без хедера
   // { path: '/special', element: <SpecialPage /> },
-
   // 404 — лучше вынести отдельно, без layout'а или с ним — как хочешь
   // { path: '*', element: <NotFound /> },
 ]);
