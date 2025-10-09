@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     children: [
       { path: '/', element: <HomePage /> },
       { path: '/catalog/:categorySlug', element: <OilCategoryPage /> },
-      { path: '/policy', element: <Policy /> },
+      { path: '/privacy-policy', element: <Policy /> },
     ],
   },
   // Страницы без layout'а (если понадобятся) — например, лендинг без хедера
