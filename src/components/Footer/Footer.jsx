@@ -108,7 +108,9 @@ export default function Footer() {
             <p>
               &copy; {currentYear} DevOil. {t('footer.copyright')}
             </p>
-            <a href="/privacy-policy" target='_blank' className="footer-privacy-link">
+            <a href="/privacy-policy" 
+            // target='_blank' 
+            className="footer-privacy-link">
               {t('footer.privacy-policy')}
             </a>
             <div className="footer-docs">

@@ -247,7 +247,7 @@ export default function Bid() {
                 <a
                   className="bid-link"
                   href="/privacy-policy"
-                  target="_blank"
+                  // target="_blank"
                   rel="noopener noreferrer"
                 >
                 {t("contact_form.consent.link_text")}
