@@ -110,24 +110,24 @@ export default function Header() {
             </Link>
           </div>
           <nav className="mobile-nav">
-            <button 
+            <p 
               className="mobile-nav-link"
               onClick={() => handleScrollTo('catalog')}
             >
               {t('header.catalog')}
-            </button>
-            <button 
+            </p>
+            <p 
               className="mobile-nav-link"
               onClick={() => handleScrollTo('aboutcompany')}
             >
               {t('header.about')}
-            </button>
-            <button 
+            </p>
+            <p 
               className="mobile-nav-link"
               onClick={() => handleScrollTo('contacts')}
             >
               {t('header.contacts')}
-            </button>
+            </p>
             <button 
               className="mobile-consultation"
               onClick={() => handleScrollTo('bid')}

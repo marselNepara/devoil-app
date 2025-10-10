@@ -178,6 +178,7 @@
 
 .mobile-nav-link,
 .mobile-consultation {
+  cursor: pointer;
   text-align: center;
   font-size: 20px;
   color: #fff;
