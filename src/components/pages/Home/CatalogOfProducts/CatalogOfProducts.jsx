@@ -70,7 +70,7 @@ export default function CatalogOfProducts() {
               </div>
 
               {/* Редукторные масла — правый блок */}
-              <div
+              {/* <div
                 ref={rightRef}
               className={`catalog-of-products-item slide-right-catalog ${isRightVisible ? 'visible' : ''}`}
               >
@@ -90,7 +90,7 @@ export default function CatalogOfProducts() {
                   <p className="usage-item usage-item-3">{t('catalog.item-3-usage-item-3')}</p>
                 </div>
                 <Link to="catalog/reducer-oils" className="item-button-more item-button-more-3">{t('catalog.btn-more')}</Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

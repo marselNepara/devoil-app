@@ -74,6 +74,10 @@ export default function Footer() {
                 <a href="tel:+79859775678">+7 985 977 5678</a>
               </div>
               <div className="footer-contacts-item">
+                <img src={PhoneImg} alt={t('footer.contacts.phone-alt')} />
+                <a href="tel:+79859775678">+7 985 130 8649</a>
+              </div>
+              <div className="footer-contacts-item">
                 <img src={MailImg} alt={t('footer.contacts.email-alt')} />
                 <p>devoil@internet.ru</p>
               </div>
@@ -109,7 +113,7 @@ export default function Footer() {
               &copy; {currentYear} DevOil. {t('footer.copyright')}
             </p>
             <a href="/privacy-policy" 
-            // target='_blank' 
+            target='_blank' 
             className="footer-privacy-link">
               {t('footer.privacy-policy')}
             </a>
