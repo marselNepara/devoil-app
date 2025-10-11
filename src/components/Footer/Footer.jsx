@@ -46,9 +46,9 @@ export default function Footer() {
               <Link to="/catalog/vaseline-oils" className="footer-column-link">
                 {t('footer.catalog.items.vaseline-oils')}
               </Link>
-              <Link to="/catalog/reducer-oils" className="footer-column-link">
+              {/* <Link to="/catalog/reducer-oils" className="footer-column-link">
                 {t('footer.catalog.items.gear-oils')}
-              </Link>
+              </Link> */}
             </div>
 
             <div className="footer-column">

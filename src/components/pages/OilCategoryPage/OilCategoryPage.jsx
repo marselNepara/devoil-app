@@ -19,6 +19,9 @@ export default function OilCategoryPage() {
       gradient: 'linear-gradient(90deg, #f5e6d3 100%, #fff5f2 0%)',
       usageBg: '#f5e6d3',
       usageText: '#d29d19',
+      viscosities: [
+        { value: '10', desc: 'Для лёгких нагрузок' },
+      ],
       applications: {
         cosmetic: {
           title: 'Косметическая промышленность',
@@ -80,6 +83,11 @@ export default function OilCategoryPage() {
       gradient: 'linear-gradient(90deg, #e8edf5 100%, #fff5f2 0%)',
       usageBg: '#e8edf5',
       usageText: '#233446',
+      viscosities: [
+        { value: '20', desc: 'Универсальное применение' },
+        { value: '30', desc: 'Для средних нагрузок' },
+        { value: '40', desc: 'Для тяжёлых нагрузок' },
+      ],
       applications: {
         cosmetic: {
           title: 'Косметическая промышленность',
@@ -138,6 +146,12 @@ export default function OilCategoryPage() {
       gradient: 'linear-gradient(90deg, #f0f4f8 100%, #fff5f2 0%)',
       usageBg: '#f0f4f8',
       usageText: '#8796aa',
+      viscosities: [
+        { value: '10', desc: 'Для лёгких нагрузок' },
+        { value: '20', desc: 'Универсальное применение' },
+        { value: '30', desc: 'Для средних нагрузок' },
+        { value: '40', desc: 'Для тяжёлых нагрузок' },
+      ],
       applications: {
         cosmetic: {
           title: 'Промышленное оборудование',
@@ -203,13 +217,6 @@ export default function OilCategoryPage() {
       </section>
     );
   }
-
-  const viscosities = [
-    { value: '10', desc: 'Для лёгких нагрузок' },
-    { value: '20', desc: 'Универсальное применение' },
-    { value: '30', desc: 'Для средних нагрузок' },
-    { value: '40', desc: 'Для тяжёлых нагрузок' },
-  ];
 
   return (
     <section className="oil-category-page">
@@ -285,7 +292,7 @@ export default function OilCategoryPage() {
               <>
                 <h2 className="content-title">Доступные вязкости</h2>
                 <div className="viscosities">
-                  {viscosities.map((v, i) => (
+                  {category.viscosities.map((v, i) => (
                     <div key={i} className="viscosity" style={{ borderColor: category.color }}>
                       <h3 className="viscosity-value" style={{ color: category.color }}>
                         {v.value}
