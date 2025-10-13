@@ -49,7 +49,7 @@ export default function CatalogOfProducts() {
               </div>
               <div
                 ref={centerRef}
-                className={`catalog-of-products-item center-item-catalog ${isCenterVisible ? 'visible' : ''}`}>
+                className={`catalog-of-products-item slide-right-catalog ${isCenterVisible ? 'visible' : ''}`}>
                 <div className="item-image item-image-2">
                   <p className="item-segment item-segment-2">{t('catalog.item-2-segment')}</p>
                   <img src={BottleImg} alt="Вазелиновые масла" />
