@@ -117,10 +117,10 @@ export default function Footer() {
             className="footer-privacy-link">
               {t('footer.privacy-policy')}
             </a>
-            <div className="footer-docs">
+            {/* <div className="footer-docs">
               <p>ИНН: 7701234567</p>
               <p>ОГРН: 1027700123456</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
