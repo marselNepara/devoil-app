@@ -1,12 +1,39 @@
-# React + Vite
+# DevOil — Веб-платформа поставщика базовых масел
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 
-Currently, two official plugins are available:
+**DevOil** — современная веб-платформа для компании, специализирующейся на поставках высококачественных базовых масел. Проект реализован как полноценное SPA-решение с интеграцией фронтенда (React/Vite), бэкенда (ASP.NET Core Web API) и автоматизации через **Telegram-бота на C#**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Основные возможности
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🌐 Многоязычная поддержка (русский / английский)
+- 🎯 Плавные анимации при скролле (Intersection Observer)
+- 📱 Адаптивный дизайн
+- 📝 Форма заявки → отправка через API → уведомление в Telegram
+- 🔧 Полная локализация интерфейса без перезагрузки
+- 💼 Разделы: каталог продукции, о компании, этапы сотрудничества
+
+---
+
+## 🛠️ Технологический стек
+
+| Слой | Технологии |
+|------|-----------|
+| **Frontend** | React, Vite, JavaScript (ES6+), CSS Modules |
+| **Backend** | ASP.NET Core Web API (C#) |
+| **Интеграция** | Telegram Bot API (C#) |
+| **Сборка** | Vite |
+| **Локализация** | Кастомный хук `useTranslation`, JSON-переводы |
+| **Анимации** | IntersectionObserver, CSS transitions |
+
+---
+
+## 🚀 Запуск проекта (фронтенд)
+
+1. Установи зависимости:
+   ```bash
+   npm install
